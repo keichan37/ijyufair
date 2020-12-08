@@ -484,7 +484,14 @@ a:hover {
 img {
   max-width: 100%;
 }
-#brand svg {
+header #brand svg {
   width: 172px;
   height: auto;
+}
+footer {
+  padding-bottom: 10px;
+  background-image: url("../images/pattern.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
 }
