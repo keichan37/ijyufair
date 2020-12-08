@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Noto+Serif+JP:400,700&display=swap&subset=japanese');
+@import "normalize";
+@import "mixin";
+@import "loader";
+
+@sans-serif: 'Noto Sans JP';
+@serif: 'Noto Serif JP';
+
+html,
+body {
+  font-family: @sans-serif, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-weight: 500;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  color: #000000;
+  font-feature-settings: "palt";
+  -webkit-font-feature-settings: "palt";
+  letter-spacing: 0.025em;
+  font-size: 16px;
+}
+
+a {
+  color: #000000;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+#brand {
+  svg {
+    width: 172px;
+    height: auto;
+  }
+}

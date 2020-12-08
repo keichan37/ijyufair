@@ -1,0 +1,35 @@
+-
+  var nav = {
+    top:{
+      url:"/",
+      name:"宮城まるごとオンライン移住フェア"
+    },
+    draft:{
+      url:"/draft",
+      name:"宮城しごとドラフト"
+    },
+    booth:{
+      url:"javascript(void(0))",
+      name:"個別ブース"
+    },
+    symposium:{
+      url:"javascript:void(0);",
+      name:"Miyagi Meeting"
+    }
+  };
+  function currentCheck(i){
+    if( i == page )
+      return "current";
+    else
+      return "";
+  }
+
+header
+  #brand
+    a(href="/")
+      include ../../svg/brand.svg
+  nav
+    ul.globalnav
+      - for(item in nav)
+        li(class=`globalnav__item ${currentCheck(item)}`)
+          a(href=`${nav[item].url}`)= nav[item].name

@@ -1,0 +1,3 @@
+#!/bin/sh
+  pug src/pug/views -o public -P
+  lessc src/styles/application.less > public/css/application.css

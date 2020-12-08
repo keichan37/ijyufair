@@ -1,0 +1,16 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'title'
+  - metas.url = 'url'
+  - metas.image = 'image'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+block title
+    title 宮城まるごとオンライン移住フェア | 宮城しごとドラフト
+block body
+  - var page = "draft";
+  include ../include/_header
+  h1 宮城しごとドラフト
+  time 2021.1.13 [土] 10:00~12:00
+  include ../include/_footer

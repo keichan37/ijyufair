@@ -1,0 +1,15 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'title'
+  - metas.url = 'url'
+  - metas.image = 'image'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+block title
+    title 宮城まるごとオンライン移住フェア
+block body
+  - var page = "top";
+  include ../include/_header
+  h1 宮城まるごとオンライン移住フェア
+  include ../include/_footer

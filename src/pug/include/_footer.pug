@@ -1,0 +1,32 @@
+-
+  var nav = {
+    top:{
+      url:"/",
+      name:"宮城まるごとオンライン移住フェア"
+    },
+    draft:{
+      url:"/draft",
+      name:"宮城しごとドラフト"
+    },
+    booth:{
+      url:"javascript(void(0))",
+      name:"個別ブース"
+    },
+    symposium:{
+      url:"javascript:void(0);",
+      name:"Miyagi Meeting"
+    },
+    term:{
+      url:"/privacy",
+      name:"プライバシーポリシー"
+    }
+  };
+
+footer
+  | 宮城県震災復興・企画部 地域振興支援課
+  address 〒980-8570宮城県仙台市青葉区本町三丁目8番1号行政庁舎6階南側
+  ul
+    - for(item in nav)
+      li
+        a(href=`${nav[item].url}`)= nav[item].name
+  small Copyright &copy; Miyagi Prefectural Government. All Rights Reserved
