@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ https://d3cbp6yxil454e.cloudfront.net/$1 [R=301,L]
-
