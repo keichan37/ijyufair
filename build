@@ -1,3 +1,5 @@
 #!/bin/sh
   pug src/pug/views -o html -P
   lessc src/styles/application.less > html/css/application.css
+  mv html/privacy.html html/privacy/index.html
+  mv html/draft.html html/draft/index.html
