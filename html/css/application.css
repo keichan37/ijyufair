@@ -713,6 +713,7 @@ img {
 }
 .draft__section > h2 > span {
   background: linear-gradient(transparent 92%, #e4005a 8%);
+  padding-bottom: 10px;
 }
 .draft__section > p {
   text-align: center;
