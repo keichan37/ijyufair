@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Noto+Serif+JP:400,700&display=swap&subset=japanese');
 @import "normalize";
 @import "mixin";
+@import "variables";
 @import "loader";
-
-@sans-serif: 'Noto Sans JP';
-@serif: 'Noto Serif JP';
 
 html,
 body {
@@ -21,10 +18,15 @@ body {
   -webkit-font-feature-settings: "palt";
   letter-spacing: 0.025em;
   font-size: 16px;
+  background-image: url("../images/background.jpg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 a {
   color: #000000;
+  .transition;
   &:hover {
     text-decoration: none;
   }
@@ -34,19 +36,216 @@ img {
   max-width: 100%;
 }
 
-header {
+.header {
+  height: 80px;
+  .container;
+  .border-box;
+  .flex;
+  .flex-middle;
   #brand {
     svg {
       width: 172px;
       height: auto;
     }
   }
+  &__nav {
+    .flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    > li {
+      padding-left: 30px;
+      > a {
+        text-decoration: none;
+        font-size: 18px;
+        &:hover {
+          color: @blue;
+        }
+      }
+    }
+  }
 }
 
-footer {
+.footer {
   padding-bottom: 10px;
   background-image: url("../images/pattern.png");
   background-repeat:  no-repeat;
   background-position: bottom center;
   background-size: 100% auto;
+  font-size: 14px;
+  background-color: @white;
+  padding-top: 30px;
+  &__inner {
+    .container;
+    > small,
+    > address,
+    > strong {
+      display: block;
+    }
+    > small {
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    > address {
+      font-style: normal;
+      margin-bottom: 30px;
+    }
+    > strong {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+  }
+  &__nav {
+    list-style: none;
+    margin: 0 0 40px 0;
+    padding: 0;
+    .flex;
+    > li {
+      &:not(:first-child) {
+        margin-left: 25px;
+      }
+      > a {
+      }
+    }
+  }
+}
+
+.draft {
+  background-image: url("../images/illust.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top 50px center;
+  text-align: center;
+  &__cover {
+    padding-top: 200px;
+    > h1 {
+      margin: 0;
+      padding: 0;
+      > img {
+      }
+    }
+  }
+  &__section {
+    .container;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    // これ後で共通化
+    > h2 {
+      font-size: 40px;
+      line-height: 1.6;
+      margin: 0;
+      margin-bottom: 30px;
+      padding: 0;
+      text-align: center;
+      > span {
+        background: linear-gradient(transparent 92%, @pink 8%);
+      }
+    }
+    > p {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0 0 30px 0;
+    }
+    & > &__explan {
+      font-size: 15px;
+      line-height: 1.3;
+      max-width: 741px;
+      margin: 0px auto;
+      text-align: left;
+    }
+    &__flow {
+      .flex;
+      list-style: none;
+      margin: 0;
+      padding: 50px 20px 40px 20px;
+      .border-radius(4px);
+      background-color: fade(@white, 80%);
+      max-width: 1100px;
+      > li {
+        .border-box;
+        width: 100% / 3;
+        position: relative;
+        padding: 0 20px;
+        > svg {
+          fill: @pink;
+          height: 155px;
+          width: auto;
+          margin: 0px auto;
+          display: block;
+          margin-bottom: 20px;
+          &.arrow {
+            width: 27px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin: -38px -13px 0 0;
+          }
+        }
+        > h3 {
+          text-align: center;
+          color: @pink;
+          font-size: 24px;
+          margin: 0 0 15px 0;
+        }
+        > p {
+          margin: 0;
+          font-size: 14px;
+          line-height: 1.3;
+        }
+      }
+    }
+    &__table {
+      border-collapse: separate;
+      border-spacing: 0;
+      background-color: fade(@white, 80%);
+      .border-radius(4px);
+      margin: 0px auto;
+      margin-bottom: 25px;
+      max-width: 800px;
+      tbody {
+        tr {
+          th,
+          td {
+            padding: 17px 23px;
+            text-align: left;
+          }
+          th {
+            font-size: 16px;
+            color: @pink;
+            border-right: 1px solid fade(@black, 30%);
+          }
+          td {
+            font-size: 18px;
+          }
+          &:not(:last-child) {
+            th,
+            td {
+              border-bottom: 1px solid fade(@black, 30%);
+            }
+          }
+        }
+      }
+    }
+    // これ後で共通化
+    &__button {
+      font-size: 33px;
+      text-align: center;
+      text-decoration: none;
+      background-color: @pink;
+      color: @white;
+      max-width: 300px;
+      height: 60px;
+      margin: 0px auto;
+      margin-bottom: 25px;
+      .flex;
+      .center-item;
+      .border-radius(30px);
+      &:hover {
+        background-color: lighten(@pink,2%);
+      }
+    }
+  }
 }

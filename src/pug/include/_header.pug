@@ -24,12 +24,12 @@
       return "";
   }
 
-header
+header.header
   #brand
     a(href="/")
       include ../../svg/brand.svg
   nav
-    ul.globalnav
+    ul.header__nav
       - for(item in nav)
-        li(class=`globalnav__item ${currentCheck(item)}`)
+        li(class=`header__nav__item ${currentCheck(item)}`)
           a(href=`${nav[item].url}`)= nav[item].name
