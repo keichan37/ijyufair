@@ -1,17 +1,11 @@
 extends ../include/_layout
 block var
   - metas = {}
-  - metas.title = 'title'
-  - metas.url = 'url'
-  - metas.image = 'image'
-  - metas.site_name = 'site_name'
-  - metas.description = 'description'
-block link
-  link(rel='stylesheet', href="../css/application.css")
-block title
-    title 宮城まるごとオンライン移住フェア | プライバシーポリシー
+  - metas.title = '宮城まるごとオンライン移住フェア | プライバシーポリシー'
+  - metas.url = 'privacy/'
+  - metas.image = '../'
+  - metas.description = 'プライバシーポリシー'
 block body
-  - var page = "top";
   include ../include/_header
   h1 プライバシーポリシー
   include ../include/_footer

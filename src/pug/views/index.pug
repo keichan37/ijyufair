@@ -2,14 +2,13 @@ extends ../include/_layout
 block var
   - metas = {}
   - metas.title = '宮城まるごとオンライン移住フェア'
-  - metas.url = 'https://ijyufair.pref.miyagi.jp/'
-  - metas.image = 'image'
+  - metas.url = ''
+  - metas.image = '/'
   - metas.site_name = '宮城まるごとオンライン移住フェア'
   - metas.description = '宮城で暮らす、はたらくをわかりやすくご紹介！'
-block title
-    title 宮城まるごとオンライン移住フェア
+  - page = 'top'
 block body
-  - var page = "top";
   include ../include/_header
   h1 宮城まるごとオンライン移住フェア
+  a.draft__section__button(href="/draft/") 宮城しごとドラフトとは
   include ../include/_footer

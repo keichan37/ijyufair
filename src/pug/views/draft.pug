@@ -2,24 +2,20 @@ extends ../include/_layout
 block var
   - metas = {}
   - metas.title = '宮城まるごとオンライン移住フェア | 宮城しごとドラフト'
-  - metas.url = 'url'
-  - metas.image = 'image'
-  - metas.site_name = 'site_name'
+  - metas.url = 'draft/'
+  - metas.image = '../'
   - metas.description = 'やりたい仕事にエントリーして、あたらしいキャリアをスタートさせよう。'
-block link
-  link(rel='stylesheet', href="../css/application.css")
-block title
-  title 宮城まるごとオンライン移住フェア | 宮城しごとドラフト
+  - page = 'draft'
 block body
   .draft
-    - var page = "draft";
+    //- var page = "draft";
     include ../include/_header
     .draft__cover
       h1
-        img(src="../images/draft.png" alt="宮城しごとドラフト")
+        img(src="" + metas.image + "images/draft.png" alt="宮城しごとドラフト")
       a.draft__section__button(href="javascript:void(0);") 参加エントリー
       time
-        img(src="../images/draft_datetime.png" alt="2021.1.13 [土] 10:00~12:00")
+        img(src="" + metas.image + "images/draft_datetime.png" alt="2021.1.13 [土] 10:00~12:00")
     section.draft__section
       h2
         span 自分だけのキャリアを手にするまでの流れ

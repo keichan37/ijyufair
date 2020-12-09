@@ -77,6 +77,12 @@ img {
           color: @blue;
         }
       }
+      &.current {
+        > a {
+          cursor: default;
+          color: @blue;
+        }
+      }
     }
   }
   .drawer {
@@ -351,7 +357,7 @@ img {
     }
     // これ後で共通化
     &__button {
-      font-size: 33px;
+      font-size: 28px;
       text-align: center;
       text-decoration: none;
       background-color: @pink;
