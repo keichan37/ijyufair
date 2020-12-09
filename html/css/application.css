@@ -434,7 +434,6 @@ template {
 html,
 body {
   font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-  font-weight: 400;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -465,6 +464,15 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+b,
+strong,
+th {
+  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B';
 }
 img {
   max-width: 100%;
@@ -506,6 +514,7 @@ img {
 .header__nav > li > a {
   text-decoration: none;
   font-size: 18px;
+  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B';
 }
 .header__nav > li > a:hover {
   color: #1d2088;
@@ -833,6 +842,12 @@ img {
   -moz-border-radius: 30px;
   -o-border-radius: 30px;
   -ms-border-radius: 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding-bottom: 5px;
 }
 .draft__section__button:hover {
   background-color: #ee005e;

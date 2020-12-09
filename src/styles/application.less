@@ -6,7 +6,6 @@
 html,
 body {
   font-family: @sans-serif, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-  font-weight: 400;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -36,6 +35,16 @@ a {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+b,
+strong,
+th {
+  font-family: @sans-serif-b;
+}
+
 img {
   max-width: 100%;
 }
@@ -63,6 +72,7 @@ img {
       > a {
         text-decoration: none;
         font-size: 18px;
+        font-family: @sans-serif-b;
         &:hover {
           color: @blue;
         }
@@ -353,6 +363,8 @@ img {
       .flex;
       .center-item;
       .border-radius(30px);
+      .border-box;
+      padding-bottom: 5px;
       &:hover {
         background-color: lighten(@pink,2%);
       }
