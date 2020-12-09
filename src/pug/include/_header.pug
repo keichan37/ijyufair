@@ -28,6 +28,9 @@ header.header
   #brand
     a(href="/")
       include ../../svg/brand.svg
+  input#drawer__check.drawer__input(type="checkbox")
+  label#drawer__icon.drawer__icon(for="drawer__check")
+    span
   nav
     ul.header__nav
       - for(item in nav)

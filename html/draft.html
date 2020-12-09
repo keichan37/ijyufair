@@ -24,9 +24,11 @@
       
       ga('create', 'UA-XXXXXXXX-Y', 'example.com');
       ga('send', 'pageview');
+      
+      
     </script>
   </head>
-  <body>
+  <body id="body">
     <div class="draft">
       <header class="header">
         <div id="brand"><a href="/"><svg version="1.1" id="brand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -199,6 +201,8 @@
 	c-2.3,2.7-4.5,3.9-5.4,3.9c-0.1,0-0.2,0-0.2,0c-0.9,3.2-2.6,5.4-5.3,7.1l0,0C159.9,32.9,159.5,33,159.1,33z"/>
 </svg>
 </a></div>
+        <input class="drawer__input" id="drawer__check" type="checkbox">
+        <label class="drawer__icon" id="drawer__icon" for="drawer__check"><span></span></label>
         <nav>
           <ul class="header__nav">
             <li class="header__nav__item "><a href="/">宮城まるごとオンライン移住フェア</a></li>
@@ -433,9 +437,6 @@
         </div>
       </footer>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&amp;box=ayuzSDr3dNM%3D&amp;aa=1&amp;ab=2" charset="utf-8"></script>
-    <script>(window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>'));</script>
-    <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
