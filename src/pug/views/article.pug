@@ -1,0 +1,13 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = '宮城しごとドラフト | 〇〇株式会社'
+  - metas.url = 'draft/0000'
+  - metas.image = '../../'
+  - metas.description = 'サブタイトル'
+block body
+  include ../include/_header
+  include ../include/_breadcrumb
+  h1 〇〇株式会社
+  article
+  include ../include/_footer

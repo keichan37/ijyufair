@@ -3,3 +3,4 @@
   lessc src/styles/application.less > html/css/application.css
   mv html/privacy.html html/privacy/index.html
   mv html/draft.html html/draft/index.html
+  mv html/article.html html/draft/article.html
