@@ -1,11 +1,16 @@
-nav(aria-label="breadcrumb")
-  ol.breadcrumb(itemscope itemtype="http://schema.org/BreadcrumbList")
+nav.breadcrumb(aria-label="breadcrumb")
+  ol.breadcrumb__items(itemscope itemtype="http://schema.org/BreadcrumbList")
     li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
       a(href="/" itemprop="url")
-        span(itemprop="title") TOP
-    li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-      a(href="/draft/" itemprop="url")
-        span(itemprop="title") 宮城しごとドラフト
-    li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-      a(href="javascript:void(0);" itemprop="url" aria-current="page")
-        span(itemprop="title") 〇〇株式会社
+        span(itemprop="title") HOME
+    if page=='draft'
+      li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+        a(href="/draft/" itemprop="url")
+          span(itemprop="title") 宮城しごとドラフト
+      li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+        a.current(href="javascript:void(0);" itemprop="url" aria-current="page")
+          span(itemprop="title") =metas.title
+    else
+      li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+        a.current(href="javascript:void(0);" itemprop="url" aria-current="page")
+          span(itemprop="title") プライバシーポリシー

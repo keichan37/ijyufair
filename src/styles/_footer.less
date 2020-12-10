@@ -1,0 +1,54 @@
+.footer {
+  padding-bottom: 10px;
+  background-image: url("../images/pattern.png");
+  background-repeat:  no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  font-size: 14px;
+  background-color: @white;
+  padding-top: 30px;
+  &__inner {
+    .container;
+    > small,
+    > address,
+    > strong {
+      display: block;
+    }
+    > small {
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    > address {
+      text-align: left;
+      font-style: normal;
+      margin-bottom: 30px;
+    }
+    > strong {
+      text-align: left;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+  }
+  &__nav {
+    list-style: none;
+    margin: 0 0 40px 0;
+    padding: 0;
+    .flex;
+    > li {
+      &:not(:first-child) {
+        margin-left: 25px;
+      }
+      > a {
+      }
+    }
+  }
+  @media(max-width: 767px) {
+    padding-bottom: 20px;
+    background-size: auto 20px;
+    &__nav {
+      -webkit-flex-direction: column;
+      flex-direction: column; 
+    }
+  }
+}

@@ -1,18 +1,17 @@
 extends ../include/_layout
 block var
   - metas = {}
-  - metas.title = '宮城まるごとオンライン移住フェア | 宮城しごとドラフト'
+  - metas.title = '宮城しごとドラフト'
   - metas.url = 'draft/'
   - metas.image = '../'
   - metas.description = 'やりたい仕事にエントリーして、あたらしいキャリアをスタートさせよう。'
   - page = 'draft'
 block body
   .draft
-    //- var page = "draft";
     include ../include/_header
     .draft__cover
       h1
-        img(src="" + metas.image + "images/draft.png" alt="宮城しごとドラフト")
+        img(src="" + metas.image + "images/draft.png" alt=metas.title)
       a.draft__section__button(href="javascript:void(0);") 参加エントリー
       time
         img(src="" + metas.image + "images/draft_datetime.png" alt="2021.1.13 [土] 10:00~12:00")
@@ -164,7 +163,7 @@ block body
             ]
         each item in list
           li
-            a(href="/draft/040" + item.num )
+            a(href="/draft/040" + item.num + ".html")
               b #{item.subtitle}
               img(src="" + metas.image + "images/draft/040" + item.num + "00.jpg" alt="")
               h3 #{item.title}

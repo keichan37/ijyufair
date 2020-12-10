@@ -1,13 +1,16 @@
 extends ../include/_layout
 block var
   - metas = {}
-  - metas.title = '宮城しごとドラフト | 〇〇株式会社'
+  - metas.title = '〇〇株式会社'
   - metas.url = 'draft/0000'
   - metas.image = '../../'
   - metas.description = 'サブタイトル'
+  - page = 'draft'
 block body
-  include ../include/_header
-  include ../include/_breadcrumb
-  h1 〇〇株式会社
-  article
-  include ../include/_footer
+  .article
+    include ../include/_header
+    include ../include/_breadcrumb
+    article
+      h1=metas.title
+      | テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    include ../include/_footer

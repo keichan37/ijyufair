@@ -1,0 +1,69 @@
+html,
+body {
+  font-family: @sans-serif, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+  -webkit-font-feature-settings: "palt";
+  letter-spacing: 0.025em;
+  font-size: 16px;
+  background-image: url("../images/background.jpg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: #000000;
+  .transition;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong,
+th {
+  font-family: @sans-serif-b;
+}
+
+img {
+  max-width: 100%;
+}
+
+.breadcrumb {
+  .container;
+  &__items {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    .flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      padding: 0 15px 0 0;
+    }
+    > a {
+      color: @pink;
+      &.current {
+        color: @black;
+        text-decoration: none;
+        font-family: @sans-serif-b;
+        cursor: default;
+      }
+    }
+  }
+}
