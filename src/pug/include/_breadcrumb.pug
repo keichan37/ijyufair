@@ -3,14 +3,16 @@ nav.breadcrumb(aria-label="breadcrumb")
     li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
       a(href="/" itemprop="url")
         span(itemprop="title") HOME
-    if page=='draft'
-      li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-        a(href="/draft/" itemprop="url")
-          span(itemprop="title") 宮城しごとドラフト
-      li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-        a.current(href="javascript:void(0);" itemprop="url" aria-current="page")
-          span(itemprop="title") =metas.title
-    else
+      | /
+    if page=='privacy'
       li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
         a.current(href="javascript:void(0);" itemprop="url" aria-current="page")
           span(itemprop="title") プライバシーポリシー
+    else
+      li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+        a(href="/draft/" itemprop="url")
+          span(itemprop="title") 宮城しごとドラフト
+        | /
+      li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+        a.current(href="javascript:void(0);" itemprop="url" aria-current="page")
+          span(itemprop="title") #{title}
