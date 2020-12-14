@@ -1,73 +1,57 @@
-doctype html
-html(lang="ja")
-  head
-    meta(charset='utf-8')
-    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    title 宮城しごとドラフト | #{title}
-    meta(name="description", content="")
-    meta(name="keywords", content="")
-    meta(name="author", content="")
-
-    block link
-      link(rel='stylesheet', href="../../css/application.css")
-
-    block head_script
-      //- Global site tag (gtag.js) - Google Analytics
-      script(async src="https://www.googletagmanager.com/gtag/js?id=G-D7EXNN7V03")
-      script.
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-D7EXNN7V03');
-      script(type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&box=ayuzSDr3dNM%3D&aa=1&ab=2" charset="utf-8")
-
-    meta(name="theme-color" content="#ffffff")
-    //-include ../include/_favicon
-
-  body#body
-    .article
-      include ../include/_header
-      include ../include/_breadcrumb
-      article.article__body
-        h1!=title
-        img(src="../../images/draft/" + category + "00.jpg")
-        h2!=subtitle1
-        p!=body1
-        img(src="../../images/draft/" + category + "01.jpg")
-        h2!=subtitle2
-        p!=body2
-        img(src="../../images/draft/" + category + "02.jpg")
-        h2!=subtitle3
-        p
-          !=body3
-          br
-          a(href="javascript:void(0);") #{municipality}に移住相談をする
-        a.article__button(href="javascript:void(0);") しごとドラフトに参加する
-        table.article__table
-          tbody
-            tr
-              th(colspan="2") 案件名
-              td!=td1
-            tr
-              th(colspan="2") 勤務地
-              td!=td2
-            tr
-              th(rowspan="3") 求人概要
-              th 募集職種
-              td!=td3
-            tr
-              th 業務内容
-              td!=td4
-            tr
-              th 募集要件
-              td!=td5
-            tr
-              th(colspan="2") 条件
-              td!=td6
-            tr
-              th(colspan="2") その他
-              td!=td7
-      include ../include/_footer
-    script(src="/js/app.js")
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = '宮城しごとドラフト | '+ title
+  - metas.image = '../'
+  - page = 'draft'
+block body
+  .article
+    include ../include/_header
+    include ../include/_breadcrumb
+    article.article__body
+      b
+        i(data-feather="map-pin")
+        !=municipality
+      h1
+        span!=title
+      img.article__body__cover(src="../../images/draft/" + category + "00.jpg")
+      h2
+        span!=subtitle1
+      p!=body1
+      img(src="../../images/draft/" + category + "01.jpg")
+      h2
+        span!=subtitle2
+      p!=body2
+      img(src="../../images/draft/" + category + "02.jpg")
+      h2
+        span!=subtitle3
+      p.last-child
+        !=body3
+        br
+        a(href="javascript:void(0);") #{municipality}に移住相談をする
+      a.article__button(href="javascript:void(0);") しごとドラフトに参加する
+      table.article__table
+        tbody
+          tr
+            th(colspan="2") 案件名
+            td!=td1
+          tr
+            th(colspan="2") 勤務地
+            td!=td2
+          tr
+            th(rowspan="3") 求人概要
+            th 募集職種
+            td!=td3
+          tr
+            th 業務内容
+            td!=td4
+          tr
+            th 募集要件
+            td!=td5
+          tr
+            th(colspan="2") 条件
+            td!=td6
+          tr
+            th(colspan="2") その他
+            td!=td7
+    include ../include/_footer

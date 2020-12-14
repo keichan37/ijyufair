@@ -9,25 +9,41 @@
   padding-top: 30px;
   &__inner {
     .container;
-    > small,
-    > address,
-    > strong {
-      display: block;
-    }
     > small {
+      display: block;
       text-align: center;
       font-size: 12px;
       margin-bottom: 10px;
     }
-    > address {
-      text-align: left;
-      font-style: normal;
-      margin-bottom: 30px;
+  }
+  &__organization {
+    .flex;
+    .flex-middle;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    &__logo {
+      padding-right: 20px;
+      > a {
+        > img {
+          max-width: 140px;
+          height: auto;
+        }
+      }
     }
-    > strong {
-      text-align: left;
-      margin-bottom: 8px;
-      font-size: 20px;
+    &__information {
+      > address,
+      > strong {
+        display: block;
+      }
+      > address {
+        text-align: left;
+        font-style: normal;
+      }
+      > strong {
+        text-align: left;
+        margin-bottom: 8px;
+        font-size: 19px;
+      }
     }
   }
   &__nav {

@@ -24,8 +24,13 @@
 
 footer.footer
   .footer__inner
-    strong 宮城県震災復興・企画部 地域振興支援課
-    address 〒980-8570宮城県仙台市青葉区本町三丁目8番1号行政庁舎6階南側
+    .footer__organization
+      .footer__organization__logo
+        a(href="https://www.pref.miyagi.jp/soshiki/tisin/" target="_blank" rel="nofollow")
+          img(src=metas.image + "images/miyagi.jpg" alt="宮城県震災復興・企画部 地域振興支援課")
+      .footer__organization__information
+        strong 宮城県震災復興・企画部 地域振興支援課
+        address 〒980-8570宮城県仙台市青葉区本町三丁目8番1号行政庁舎6階南側
     ul.footer__nav
       - for(item in nav)
         li
