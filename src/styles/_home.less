@@ -22,6 +22,7 @@
   }
   &__section {
     border: 1px dashed @blue;
+    border-top: none;
     .container;
     margin-bottom: 60px;
     background-color: @white;
@@ -185,6 +186,88 @@
               font-family: @sans-serif-b;
               display: block;
               margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 767px) {
+    background-position: top 90px center;
+    &__cover {
+      padding-bottom: 30px;
+      > h1 {
+        > img {
+          max-width: 95%;
+        }
+      }
+    }
+    &__section {
+      background-size: 300% auto;
+      border-right: none;
+      border-left: none;
+      > h2 {
+        font-size: 9vw;
+        br { display: none; }
+      }
+      &__overflow-x {
+        overflow-x: scroll;
+        margin-bottom: 30px;
+      }
+      &__table {
+        margin-bottom: 0px;
+        thead,
+        tbody {
+          tr {
+            th,
+            td {
+              font-size: 4vw;
+            }
+          }
+        }
+        thead {
+          tr {
+            th {
+              width: 140px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            th {
+              width: auto;
+            }
+          }
+        }
+      }
+      &__time {
+        display: block;
+        text-align: center;
+        > b {
+          margin: 0px auto;
+          margin-bottom: 5px;
+          height: 40px;
+          .border-radius(0px);
+        }
+      }
+      &__overview {
+        background-image: url("../images/pattern.png");
+      }
+      &__stage {
+        padding-left: 0;
+        padding-right: 0;
+        &__body {
+          padding-left: 15px;
+          padding-right: 15px;
+          border-left: none;
+          border-right: none;
+          > figure {
+            flex-wrap: wrap;
+            img {
+              margin-bottom: 5px;
+            }
+            > figcaption {
+              padding-left: 0;
             }
           }
         }

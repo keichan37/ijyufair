@@ -27,18 +27,29 @@ block body
         br
         | どなたでもお気軽にお越しください。
       .home__section__overview__buttons
-        a.home__section__overview__button(href="#home__section__stage")
-          | ステージイベント
-          i(data-feather="arrow-down-circle")
-        a.home__section__overview__button(href="#home__section__draft")
-          | 宮城しごとドラフト
-          i(data-feather="arrow-down-circle")
-        a.home__section__overview__button(href="#home__section__meeting")
-          | Miyagi Meeting
-          i(data-feather="arrow-down-circle")
-        a.home__section__overview__button(href="#home__section__consultation")
-          | 個別相談ブース
-          i(data-feather="arrow-down-circle")
+        -
+            var linklist = [
+              {
+                text: 'ステージイベント',
+                link: 'stage',
+              },
+              {
+                text: '宮城しごとドラフト',
+                link: 'draft',
+              },
+              {
+                text: 'Miyagi Meeting',
+                link: 'meeting',
+              },
+              {
+                text: '個別相談ブース',
+                link: 'consultation',
+              },
+            ]
+        each item in linklist
+          a.home__section__overview__button(href="#home__section__" + item.link)
+            !=item.text
+            i(data-feather="arrow-down-circle")
       p.home__section__supplement
         | 宮城県内市町村と宮城県内企業○社が市町村と仕事の魅力をご紹介します。
         br
@@ -56,7 +67,7 @@ block body
         | 自宅にいながら宮城を味わうことができる「宮城まるごと味わいセット」をプレゼントします。
         br
         | イベント当日は、宮城の味を楽しみながら、是非ご参加ください！
-    section.home__section#home__section__stage
+    section.home__section.home__section__stage#home__section__stage
       h2
         span ステージイベント
       .home__section__stage__body
@@ -79,7 +90,7 @@ block body
           br
           | お二人にざっくばらんにお話いただきたいと考えております。
         -
-            var list = [
+            var speakerlist1 = [
               {
                 num: 0,
                 speaker: '南三陸町長 佐藤仁',
@@ -91,7 +102,7 @@ block body
                 introduction: '1977年、宮城県亘理郡山元町生まれ。 24歳でＩＴベンチャーを起業。 現在日本およびインドで６つの法人のトップを務める。 2011年の東日本大震災後には、大きな被害を受けた故郷山元町の復興を目的にGRAを設立。 先端施設園芸を軸とした「地方の再創造」をライフワークとするようになる。 イチゴビジネスに構造変革を起こし、ひと粒1000円の「ミガキイチゴ」を生み出す。<br />著書に、『絶対にギブアップしたくない人のための 成功する農業』（朝日新聞出版・２０１８） 『甘酸っぱい経営』（株式会社ブックウォーカー・２０１５） 『99％の絶望の中に「1％のチャンス」は実る』（ダイヤモンド社・２０１４）',
               },
             ]
-        each item in list
+        each item in speakerlist1
           figure
             img(src="images/home/0" + item.num + ".jpg" alt=speaker)
             figcaption
@@ -116,7 +127,7 @@ block body
           br
           | 宮城出身の事業継承者と起業家の視点で、宮城の未来とそれぞれの事業の展開や構想について、ざっくばらんにお話いただきたいと考えております。
         -
-            var list = [
+            var speakerlist2 = [
               {
                 num: 2,
                 speaker: 'Green-Room株式会社 代表取締役 野伏龍寛',
@@ -133,7 +144,7 @@ block body
                 introduction: '1988年生。宮城県多賀城市出身。関東学院大学経済学部卒業後、多数のアパレルブランドを全国展開する株式会社パルに入社。第５事業部配属となりPGO仙台港副店長や商品部メンズアシスタントバイヤーとして活躍。2020年から株式会社丸山運送の取締役専務執行役員に就任。',
               },
             ]
-        each item in list
+        each item in speakerlist2
           figure
             img(src="images/home/0" + item.num + ".jpg" alt=speaker)
             figcaption
@@ -157,10 +168,10 @@ block body
           | 日(土) 
           span 13:00~14:00
 
-      include ../include/_flow
+      include ../include/_entryflow
       h3
         span 気になる仕事を探してエントリー
-      include ../include/_list
+      include ../include/_joblist
       h3
 
       a.home__section__button(href="/draft/") 宮城しごとドラフトとは
@@ -174,41 +185,42 @@ block body
         | 気になる市町村や仕事があれば、各市町村や企業に直接話が聞ける市町村ブースを訪問してみてください。
         br
         | いずれも参加人数が限られますので事前予約がおすすめです。
-      table.home__section__table
-        thead
-          tr
-            th(colspan="2")
-              time.home__section__time(datetime="2021-02-13 13:00:00.000-14:00") 
-                b
-                  span DAY
-                  span 1
-                span
-                  | 2月
-                  span 13
-                  | 日(土) 
-                  span 13:00~14:00
-            th(colspan="2")
-              time.home__section__time(datetime="2021-02-14 13:00:00.000-14:00") 
-                b
-                  span DAY
-                  span 2
-                span
-                  | 2月
-                  span 14
-                  | 日(日) 
-                  span 13:00~14:00
-        tbody
-          tr
-            th 自治体
-            td 仙台市 / 石巻市 / 岩沼市 / 大河原市 / 大崎市 / 大郷町 / 大衡村 / 女川町 / 角田市 / 加美町 / 川崎町 / 栗原町 / 気仙沼市 / 蔵王町 / 塩釜市 / 色麻町 / 七ヶ宿町 / 七ヶ浜町
-            th 自治体
-            td 仙台市 / 柴田町 / 白石市 / 大和町 / 多賀城市 / 富谷市 / 登米市 / 名取市 / 東松島市 / 松島町 / 丸森町 / 美里町 / 南三陸町 / 村田町 / 山元町 / 利府町 / 涌谷町 / 垣理町
-          tr
-            th 企業
-            td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
-            th 企業
-            td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
-          tr
-            td(colspan="4") 宮城移住サポートセンター
+      .home__section__overflow-x
+        table.home__section__table
+          thead
+            tr
+              th(colspan="2")
+                time.home__section__time(datetime="2021-02-13 13:00:00.000-14:00") 
+                  b
+                    span DAY
+                    span 1
+                  span
+                    | 2月
+                    span 13
+                    | 日(土) 
+                    span 13:00~14:00
+              th(colspan="2")
+                time.home__section__time(datetime="2021-02-14 13:00:00.000-14:00") 
+                  b
+                    span DAY
+                    span 2
+                  span
+                    | 2月
+                    span 14
+                    | 日(日) 
+                    span 13:00~14:00
+          tbody
+            tr
+              th 自治体
+              td 仙台市 / 石巻市 / 岩沼市 / 大河原市 / 大崎市 / 大郷町 / 大衡村 / 女川町 / 角田市 / 加美町 / 川崎町 / 栗原町 / 気仙沼市 / 蔵王町 / 塩釜市 / 色麻町 / 七ヶ宿町 / 七ヶ浜町
+              th 自治体
+              td 仙台市 / 柴田町 / 白石市 / 大和町 / 多賀城市 / 富谷市 / 登米市 / 名取市 / 東松島市 / 松島町 / 丸森町 / 美里町 / 南三陸町 / 村田町 / 山元町 / 利府町 / 涌谷町 / 垣理町
+            tr
+              th 企業
+              td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
+              th 企業
+              td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
+            tr
+              td(colspan="4") 宮城移住サポートセンター
       a.home__section__button(href="javascript:void(0);") 個別相談ブースとは
     include ../include/_footer

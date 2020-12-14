@@ -49,6 +49,11 @@
     &__nav {
       -webkit-flex-direction: column;
       flex-direction: column; 
+      > li {
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
     }
   }
 }
