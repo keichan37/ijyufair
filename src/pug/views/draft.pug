@@ -19,28 +19,7 @@ block body
       h2
         span 自分だけのキャリアを手にするまでの流れ
       p やりたい仕事にエントリーして、あたらしいキャリアをスタートさせよう。
-      ul.draft__section__flow
-        li
-          include ../../svg/pictogram01.svg
-          h3 まずはエントリー
-          p
-            | 宮城ならではの仕事をWebでチェック。
-            br
-            | あなたらしさを発揮できる仕事を選んでエントリー。
-          include ../../svg/arrow.svg
-        li
-          include ../../svg/pictogram02.svg
-          h3 オンラインイベントへ参加
-          p
-            | 自宅などからイベント参加。
-            br
-            | オンラインで交流し、企業、市町村にスカウトしてもらおう。
-          include ../../svg/arrow.svg
-        li
-          include ../../svg/pictogram03.svg
-          h3 個別相談ブースに参加
-          p
-            | さらに興味がある市町村や企業の話を個別相談ブースでじっくり聞いてみよう。
+      include ../include/_flow
     section.draft__section
       h2
         span イベント概要
@@ -127,46 +106,7 @@ block body
           br
           | イベントへエントリー
 
-      ul.draft__section__list
-        -
-            var list = [
-              {
-                num: 0,
-                title: '気仙沼に漁師を増やす仕掛け人、募集！',
-                subtitle: '気仙沼市',
-              },
-              {
-                num: 1,
-                title: '保育士／認証保育園',
-                subtitle: '世田谷区',
-              },
-              {
-                num: 2,
-                title: '訪問介護介護福祉士',
-                subtitle: '大田区',
-              },
-              {
-                num: 3,
-                title: 'SE',
-                subtitle: '町田市',
-              },
-              {
-                num: 4,
-                title: '経理事務・総務事務',
-                subtitle: '港区',
-              },
-              {
-                num: 5,
-                title: 'ITエンジニア',
-                subtitle: '新宿区',
-              },
-            ]
-        each item in list
-          li
-            a(href="/draft/040" + item.num + ".html")
-              b #{item.subtitle}
-              img(src="" + metas.image + "images/draft/040" + item.num + "00.jpg" alt="")
-              h3 #{item.title}
+      include ../include/_list
 
     section.draft__section.last-child
       h2

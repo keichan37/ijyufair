@@ -34,6 +34,7 @@
   padding-bottom: 5px;
   &:hover {
     background-color: lighten(@background-color,2%);
+    .box-shadow-solid(0,0,5px,@background-color);
   }
 }
 
@@ -105,7 +106,7 @@
   box-shadow: @x @y @blur rgba(0,0,0,@opacity);
 }
 
-.box-shadow-solid(@x: 2px, @y: 2px, @blur: 2px, @color: #000000 ) {
+.box-shadow-solid(@x: 0px, @y: 0px, @blur: 5px, @color: #000000 ) {
   -webkit-box-shadow: @x @y @blur @color;
   -moz-box-shadow: @x @y @blur @color;
   -ms-box-shadow: @x @y @blur @color;

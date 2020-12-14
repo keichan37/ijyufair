@@ -1,7 +1,34 @@
 #!/bin/sh
+
+dev() {
+  pug src/pug/views -o html -P
+  lessc src/styles/application.less > html/css/application.css
+  mv html/privacy.html html/privacy/index.html
+  mv html/draft.html html/draft/index.html
+  rm html/article.html
+}
+
+pro() {
   pug src/pug/views -o html -P
   lessc src/styles/application.less > html/css/application.css
   mv html/privacy.html html/privacy/index.html
   mv html/draft.html html/draft/index.html
   rm html/article.html
   npx gulp
+}
+
+
+case "$1" in
+  dev)
+    dev && exit 0
+    $1
+    ;;
+  pro)
+    pro || exit 0
+    $1
+    ;;
+  *)
+    echo $"Usage: $0 {dev|pro}"
+    exit 2
+esac
+exit $?
