@@ -20,6 +20,9 @@ body {
   &.overflow {
     overflow: hidden;
   }
+  @media(max-width: 767px) {
+    background-size: 100% calc(var(--vh, 1vh) * 100);
+  }
 }
 
 a {

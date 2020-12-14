@@ -28,7 +28,7 @@ block body
       p.last-child
         !=body3
         br
-        a(href="javascript:void(0);") #{municipality}に移住相談をする
+        a(href=link) #{municipality}に移住相談をする
       a.article__button(href="javascript:void(0);") しごとドラフトに参加する
       table.article__table
         tbody
@@ -54,4 +54,8 @@ block body
           tr
             th(colspan="2") その他
             td!=td7
+      .article__link
+        a(href="/draft/" + nextlink + ".html")
+          | 次の求人を見る
+          i(data-feather="arrow-right-circle")
     include ../include/_footer

@@ -38,7 +38,8 @@ const build = (callback) => {
             td4: data[catKey]["td4"],
             td5: data[catKey]["td5"],
             td6: data[catKey]["td6"],
-            td7: data[catKey]["td7"]
+            td7: data[catKey]["td7"],
+            nextlink: data[catKey]["nextlink"]
           }
         })
       )
