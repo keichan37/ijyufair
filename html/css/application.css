@@ -377,19 +377,13 @@ body {
   letter-spacing: 0.025em;
   font-size: 16px;
   background-image: url("../images/background.jpg");
-  background-size: 100% 100%;
+  background-size: 100% calc(var(--vh, 1vh) * 100);
   background-position: center center;
   background-attachment: fixed;
 }
 html.overflow,
 body.overflow {
   overflow: hidden;
-}
-@media (max-width: 767px) {
-  html,
-  body {
-    background-size: 100% calc(var(--vh, 1vh) * 100);
-  }
 }
 a {
   color: #000000;
