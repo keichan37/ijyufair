@@ -1028,10 +1028,10 @@ img {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top 50px center;
-  text-align: center;
 }
 .draft__cover {
   padding-top: 150px;
+  text-align: center;
 }
 .draft__cover > h1 {
   margin: 0;
@@ -1046,6 +1046,7 @@ img {
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   padding: 0 25px;
+  text-align: center;
   padding-top: 40px;
   margin-bottom: 40px;
 }
