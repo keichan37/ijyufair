@@ -1219,6 +1219,10 @@ img {
   .job__list > li {
     width: 100%;
   }
+  .job__list > li > a > img {
+    height: auto;
+    max-height: none;
+  }
 }
 .entry__flow {
   display: -webkit-flex;
