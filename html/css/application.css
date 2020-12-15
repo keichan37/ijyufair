@@ -459,7 +459,7 @@ img {
 .header .drawer__input {
   display: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 952px) {
   .header #brand {
     position: relative;
     z-index: 3;
@@ -475,7 +475,10 @@ img {
     padding: 0 25px;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
+    background: -moz-linear-gradient(#ffffff, rgba(255, 255, 255, 0.4));
+    background: -webkit-linear-gradient(#ffffff, rgba(255, 255, 255, 0.4));
+    background: linear-gradient(#ffffff, 65%, rgba(255, 255, 255, 0.4));
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -513,7 +516,7 @@ img {
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: #1d2088;
     border: 1px solid #1d2088;
   }
   .header .drawer__icon > span,
@@ -528,7 +531,7 @@ img {
     -moz-border-radius: 3px;
     -o-border-radius: 3px;
     -ms-border-radius: 3px;
-    background-color: #1d2088;
+    background-color: #ffffff;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -931,6 +934,15 @@ img {
   align-items: center;
   justify-content: center;
 }
+.home__section__stage__body > figure > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
 .home__section__stage__body > figure > figcaption {
   padding-left: 15px;
   line-height: 1.4;
@@ -939,6 +951,12 @@ img {
   font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B';
   display: block;
   margin-bottom: 5px;
+}
+.home__section__stage__body > figure:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.home__section__stage__body > figure:nth-child(odd) > figcaption {
+  padding: 0 15px 0 0;
 }
 @media (max-width: 767px) {
   .home {
@@ -1396,6 +1414,7 @@ img {
   padding-bottom: 5px;
 }
 .article__body > b {
+  position: relative;
   background-image: url("../images/pattern.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -1535,6 +1554,7 @@ img {
   padding-bottom: 5px;
   font-size: 22px;
   padding-bottom: 4px;
+  margin-bottom: 30px;
 }
 .article__button:hover {
   background-color: #ee005e;

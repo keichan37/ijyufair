@@ -30,6 +30,15 @@ block body
         br
         a(href=link) #{municipality}に移住相談をする
       a.article__button(href="javascript:void(0);") しごとドラフトに参加する
+      unless category=="042137"
+        h2
+          span 地域おこし協力隊とは
+        p.last-child
+          | 地域がかかえている課題解決をミッションとして地方に移住し、ミッションクリアのために地域ブランドや観光資源を活用した商品開発や情報発信、交流イベントの企画・運営などの活動を行います。
+          | ・活動期間は，１年以上３年未満です。
+          | ・活動内容や条件、待遇等は各自治体によって異なります。
+          a(href="https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/02gyosei08_03000066.html" target="_blank" rel="nofollow")
+            | 「地域おこし協力隊」制度概要について
       table.article__table
         tbody
           tr

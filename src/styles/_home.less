@@ -183,6 +183,11 @@
           margin: 0 0 20px 0;
           .flex;
           .center-item;
+          > img {
+            width: 200px;
+            height: 200px;
+            .border-radius(4px);
+          }
           > figcaption {
             padding-left: 15px;
             line-height: 1.4;
@@ -190,6 +195,12 @@
               font-family: @sans-serif-b;
               display: block;
               margin-bottom: 5px;
+            }
+          }
+          &:nth-child(odd) {
+            flex-direction: row-reverse;
+            > figcaption {
+              padding: 0 15px 0 0;
             }
           }
         }

@@ -104,7 +104,7 @@ block body
             ]
         each item in speakerlist1
           figure
-            img(src="images/home/0" + item.num + ".jpg" alt=speaker)
+            img(src="images/home/0" + item.num + ".jpg" alt=item.speaker)
             figcaption
               span!=item.speaker
               !=item.introduction
@@ -146,7 +146,7 @@ block body
             ]
         each item in speakerlist2
           figure
-            img(src="images/home/0" + item.num + ".jpg" alt=speaker)
+            img(src="images/home/0" + item.num + ".jpg" alt=item.speaker)
             figcaption
               span!=item.speaker
               !=item.introduction
