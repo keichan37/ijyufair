@@ -892,6 +892,45 @@ img {
   right: 0;
   margin: -12px 15px 0 0;
 }
+.home__section__overview__pdf {
+  display: block;
+  max-width: 660px;
+  margin: 0px auto;
+}
+.home__section__overview__pdf > img {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  width: 660px;
+  height: auto;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border: 5px solid #e4005a;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+.home__section__overview__pdf:hover > img {
+  border-color: rgba(228, 0, 90, 0.7);
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=@ratioms)";
+}
+.home__section__present > img {
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  width: 660px;
+  height: auto;
+}
 .home__section__stage__body {
   background-color: #faed00;
   border: 3px solid #1d2088;
@@ -957,6 +996,56 @@ img {
 }
 .home__section__stage__body > figure:nth-child(odd) > figcaption {
   padding: 0 15px 0 0;
+}
+.home__section__symposium__banners {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.home__section__symposium__banners > a {
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  width: calc(50% - 10px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border: 5px solid #e4005a;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.home__section__symposium__banners > a > img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.home__section__symposium__banners > a:first-child {
+  margin-right: 10px;
+}
+.home__section__symposium__banners > a:last-child {
+  margin-left: 10px;
+}
+.home__section__symposium__banners > a:hover {
+  border-color: rgba(228, 0, 90, 0.7);
+}
+.home__section__symposium__banners > a:hover > img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=@ratioms)";
 }
 @media (max-width: 767px) {
   .home {
@@ -1033,6 +1122,18 @@ img {
   }
   .home__section__stage__body > figure > figcaption {
     padding-left: 0;
+  }
+  .home__section__symposium__banners {
+    flex-wrap: wrap;
+  }
+  .home__section__symposium__banners > a {
+    width: 100%;
+  }
+  .home__section__symposium__banners > a:first-child {
+    margin: 0 0 20px 0;
+  }
+  .home__section__symposium__banners > a:last-child {
+    margin-left: 0;
   }
 }
 .draft {
