@@ -695,19 +695,6 @@ img {
   width: 172px;
   height: auto;
 }
-.header #brand > a:hover #SVGID_2_ {
-  animation-name: brandAnimation;
-  animation-duration: 0.8s;
-  transform-origin: 39% 54%;
-}
-@keyframes brandAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .header__nav {
   display: -webkit-flex;
   display: flex;
