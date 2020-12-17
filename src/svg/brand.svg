@@ -1,34 +1,5 @@
 <svg version="1.1" id="brand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 172 34.4" style="enable-background:new 0 0 172 34.4;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#1D2088;}
-	.st1{clip-path:url(#SVGID_2_);fill:#88AF8C;}
-	.st2{clip-path:url(#SVGID_2_);fill:#DBE000;}
-	.st3{clip-path:url(#SVGID_2_);fill:#FAEE00;}
-	.st4{clip-path:url(#SVGID_2_);fill:#22AC38;}
-	.st5{clip-path:url(#SVGID_2_);fill:#2EA7E0;}
-	.st6{clip-path:url(#SVGID_2_);fill:#920783;}
-	.st7{clip-path:url(#SVGID_2_);fill:#E4007F;}
-	.st8{clip-path:url(#SVGID_2_);fill:#EA5514;}
-	.st9{clip-path:url(#SVGID_2_);fill:#324681;}
-	.st10{clip-path:url(#SVGID_2_);fill:#A48B78;}
-	.st11{clip-path:url(#SVGID_2_);fill:#956134;}
-	.st12{clip-path:url(#SVGID_2_);fill:#44691A;}
-	.st13{clip-path:url(#SVGID_2_);fill:#F18D00;}
-	.st14{clip-path:url(#SVGID_2_);fill:#5F7E4F;}
-	.st15{clip-path:url(#SVGID_2_);fill:#8E0910;}
-	.st16{clip-path:url(#SVGID_2_);fill:#00913A;}
-	.st17{clip-path:url(#SVGID_2_);fill:#F0907F;}
-	.st18{clip-path:url(#SVGID_2_);fill:#6265AD;}
-	.st19{clip-path:url(#SVGID_2_);fill:#E5005A;}
-	.st20{clip-path:url(#SVGID_2_);fill:#FED600;}
-	.st21{clip-path:url(#SVGID_2_);fill:#004C20;}
-	.st22{clip-path:url(#SVGID_2_);fill:#00A0DA;}
-	.st23{clip-path:url(#SVGID_2_);fill:#601886;}
-	.st24{clip-path:url(#SVGID_2_);fill:#13AE67;}
-	.st25{clip-path:url(#SVGID_2_);fill:#036EB8;}
-	.st26{clip-path:url(#SVGID_2_);fill:#F8B62D;}
-</style>
 <path class="st0" d="M23.7,9.6c0-0.5,0-1.1,0-1.5C23.6,6.3,22.2,5,20.3,5c-2-0.1-4.1-0.1-6.3-0.1V3.5c0-1.1-0.9-1.6-1.8-1.6
 	c-0.9,0-1.8,0.6-1.8,1.6v1.4C8.3,4.9,6.2,5,4,5C1.7,5,0.6,6.6,0.5,8c0,0.2,0,0.4,0,0.7c0,0.2,0,0.5,0,0.7c0,0.2,0,0.5,0,0.7
 	c0,0.2,0,0.4,0,0.6c0,1.2,0.9,1.7,1.8,1.7c0.9,0,1.8-0.6,1.8-1.6l0-1.5C4.2,8.5,4.2,8.1,5.7,8C7.4,8,9.4,7.9,11.5,7.9
@@ -171,31 +142,31 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
-	<rect x="75" y="7.8" class="st1" width="7.8" height="3.1"/>
-	<rect x="75" y="10.7" class="st2" width="7.8" height="3.1"/>
-	<rect x="52.2" y="8.5" class="st3" width="7.2" height="3.1"/>
-	<rect x="52.1" y="11.4" class="st4" width="7.2" height="3.1"/>
-	<rect x="50.4" y="14.3" class="st5" width="7.2" height="3.1"/>
-	<rect x="50.1" y="17.4" class="st6" width="7.8" height="2.8"/>
-	<rect x="50.2" y="20.1" class="st7" width="7.2" height="3.1"/>
-	<rect x="50.2" y="23.1" class="st8" width="7.2" height="3.1"/>
-	<rect x="75.5" y="2" class="st9" width="3.7" height="6.6"/>
-	<rect x="72" y="2" class="st10" width="3.7" height="6.6"/>
-	<rect x="68.4" y="2" class="st11" width="3.7" height="6.6"/>
-	<rect x="64.8" y="2" class="st12" width="3.7" height="6.6"/>
-	<rect x="61.2" y="2" class="st13" width="3.7" height="6.6"/>
-	<rect x="57.7" y="3.1" class="st14" width="3.7" height="6.6"/>
-	<rect x="54.1" y="3.1" class="st15" width="3.7" height="6.6"/>
+	<rect x="68.4" y="2" class="st1" width="3.7" height="6.6"/>
+	<rect x="72" y="2" class="st2" width="3.7" height="6.6"/>
+	<rect x="75.5" y="2" class="st3" width="3.7" height="6.6"/>
+	<rect x="75" y="7.8" class="st4" width="7.8" height="3.1"/>
+	<rect x="75" y="10.7" class="st5" width="7.8" height="3.1"/>
+	<rect x="75" y="13.7" class="st6" width="7.8" height="3.1"/>
+	<rect x="75" y="16.7" class="st7" width="7.8" height="3.1"/>
+	<rect x="75" y="19.8" class="st8" width="7.8" height="3.1"/>
+	<rect x="75" y="22.7" class="st9" width="7.8" height="3.1"/>
+	<rect x="77.8" y="25.8" class="st10" width="4.3" height="8"/>
+	<rect x="74.7" y="25.8" class="st11" width="4.5" height="8"/>
+	<rect x="71.1" y="25.9" class="st12" width="4.5" height="8"/>
+	<rect x="66.8" y="25.9" class="st13" width="4.5" height="8"/>
+	<rect x="62.5" y="25.9" class="st14" width="4.5" height="8"/>
+	<rect x="58.1" y="25.9" class="st15" width="4.5" height="8"/>
 	<rect x="53.8" y="25.9" class="st16" width="4.5" height="8"/>
-	<rect x="58.1" y="25.9" class="st17" width="4.5" height="8"/>
-	<rect x="62.5" y="25.9" class="st18" width="4.5" height="8"/>
-	<rect x="66.8" y="25.9" class="st19" width="4.5" height="8"/>
-	<rect x="71.1" y="25.9" class="st20" width="4.5" height="8"/>
-	<rect x="74.7" y="25.8" class="st21" width="4.5" height="8"/>
-	<rect x="77.8" y="25.8" class="st22" width="4.3" height="8"/>
-	<rect x="75" y="16.7" class="st23" width="7.8" height="3.1"/>
-	<rect x="75" y="19.8" class="st24" width="7.8" height="3.1"/>
-	<rect x="75" y="22.7" class="st25" width="7.8" height="3.1"/>
-	<rect x="75" y="13.7" class="st26" width="7.8" height="3.1"/>
+	<rect x="50.2" y="23.1" class="st17" width="7.2" height="3.1"/>
+	<rect x="50.2" y="20.1" class="st18" width="7.2" height="3.1"/>
+	<rect x="50.1" y="17.4" class="st19" width="7.8" height="2.8"/>
+	<rect x="50.4" y="14.3" class="st20" width="7.2" height="3.1"/>
+	<rect x="52.1" y="11.4" class="st21" width="7.2" height="3.1"/>
+	<rect x="52.2" y="8.5" class="st22" width="7.2" height="3.1"/>
+	<rect x="54.1" y="3.1" class="st23" width="3.7" height="6.6"/>
+	<rect x="57.7" y="3.1" class="st24" width="3.7" height="6.6"/>
+	<rect x="61.2" y="2" class="st25" width="3.7" height="6.6"/>
+	<rect x="64.8" y="2" class="st26" width="3.7" height="6.6"/>
 </g>
 </svg>

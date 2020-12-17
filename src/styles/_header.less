@@ -1,4 +1,3 @@
-// header.less
 .header {
   height: 80px;
   .container;
@@ -10,6 +9,22 @@
       > svg {
         width: 172px;
         height: auto;
+      }
+      &:hover {
+        #SVGID_2_ {
+          animation-name: brandAnimation;
+          animation-duration: 0.8s;
+          transform-origin: 39% 54%;
+        }
+
+        @keyframes brandAnimation {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
       }
     }
   }
