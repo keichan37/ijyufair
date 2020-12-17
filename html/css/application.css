@@ -363,7 +363,7 @@ template {
 }
 html,
 body {
-  font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -405,7 +405,7 @@ h4,
 b,
 strong,
 th {
-  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B';
+  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B', sans-serif;
 }
 img {
   max-width: 100%;
@@ -428,7 +428,7 @@ img {
   -moz-align-items: center;
   align-items: center;
 }
-.header #brand svg {
+.header #brand > a > svg {
   width: 172px;
   height: auto;
 }
@@ -447,7 +447,7 @@ img {
 .header__nav > li > a {
   text-decoration: none;
   font-size: 18px;
-  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B';
+  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B', sans-serif;
 }
 .header__nav > li > a:hover {
   color: #1d2088;
@@ -974,7 +974,6 @@ img {
   justify-content: center;
 }
 .home__section__stage__body > figure > img {
-  width: 200px;
   height: 200px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -987,7 +986,7 @@ img {
   line-height: 1.4;
 }
 .home__section__stage__body > figure > figcaption > span {
-  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B';
+  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B', sans-serif;
   display: block;
   margin-bottom: 5px;
 }
@@ -1747,7 +1746,7 @@ img {
 }
 .breadcrumb__item > svg {
   height: 14px;
-  width: auto;
+  width: 14px;
   margin-right: 3px;
   position: relative;
   top: 2px;
@@ -1759,6 +1758,6 @@ img {
 .breadcrumb__item > a.current {
   color: #000000;
   text-decoration: none;
-  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B';
+  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B', sans-serif;
   cursor: default;
 }
