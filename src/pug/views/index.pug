@@ -152,7 +152,7 @@ block body
               span!=item.speaker
               !=item.introduction
         a.home__section__button(href="javascript:void(0);") ステージイベントDAY2に予約
-    section.home__section#home__section__draft
+    section.home__section.home__section__draft#home__section__draft
       h2
         span 宮城しごとドラフト
       p.home__section__description
@@ -173,17 +173,42 @@ block body
       h3
         span 気になる仕事を探してエントリー
       include ../include/_joblist
-      h3
 
       a.home__section__button(href="/draft/") 宮城しごとドラフトとは
     section.home__section.home__section__symposium#home__section__symposium
       h2
-        span Miyagi Meeting
+        span
+          | Miyagi Meeting
+          br
+          | 宮城にはまり隊!
+      p.home__section__description
+        | 地域と自分らしく関わりたい！
+        br
+        | そんな「あなたと地域の座談会」です。
+      .home__section__symposium__schedule
+        time.home__section__time(datetime="2021-02-13 14:00:00.000-15:00") 
+          b
+            span DAY
+            span 1
+          span
+            | 2月
+            span 13
+            | 日(土) 
+        time.home__section__time(datetime="2021-02-14 14:00:00.000-15:00") 
+          b
+            span DAY
+            span 2
+          span
+            | 2月
+            span 14
+            | 日(日) 
+        strong 両日: 14:00~15:00
       .home__section__symposium__banners
         a(href="javascript:void(0);")
           img(src=metas.image + "images/banner03.jpg" alt="しごと編")
         a(href="javascript:void(0);")
           img(src=metas.image + "images/banner04.jpg" alt="暮らし編")
+      a.home__section__button(href="javascript:void(0);") Miyagi Meetingとは
 
     section.home__section#home__section__consultation
       h2

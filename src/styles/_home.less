@@ -236,9 +236,15 @@
         }
       }
     }
+    &__draft {
+      .job__list {
+        margin-bottom: 30px;
+      }
+    }
     &__symposium {
       &__banners {
         .flex;
+        margin-bottom: 30px;
         > a {
           display: block;
           .border-box;
@@ -262,6 +268,21 @@
               .opacity;
             }
           }
+        }
+      }
+      &__schedule {
+        .flex;
+        .center-item;
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0px auto;
+        time {
+          width: 50%;
+          margin-bottom: 10px;
+        }
+        strong {
+          font-size: 22px;
+          margin-bottom: 25px;
         }
       }
     }

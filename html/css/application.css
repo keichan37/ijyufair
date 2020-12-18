@@ -1259,11 +1259,15 @@ img {
 .home__section__stage__body > figure:nth-child(odd) > figcaption {
   padding: 0 15px 0 0;
 }
+.home__section__draft .job__list {
+  margin-bottom: 30px;
+}
 .home__section__symposium__banners {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
+  margin-bottom: 30px;
 }
 .home__section__symposium__banners > a {
   display: block;
@@ -1308,6 +1312,26 @@ img {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -ms-filter: "alpha(opacity=@ratioms)";
+}
+.home__section__symposium__schedule {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0px auto;
+}
+.home__section__symposium__schedule time {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.home__section__symposium__schedule strong {
+  font-size: 22px;
+  margin-bottom: 25px;
 }
 @media (max-width: 767px) {
   .home {
