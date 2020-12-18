@@ -923,11 +923,21 @@ img {
   margin: 0;
   padding: 0;
 }
+.home__cover > h1 > img {
+  margin-bottom: 20px;
+}
 .home__cover > img {
   position: absolute;
   bottom: 0;
   left: 50%;
   margin: 0 0 0 -580px;
+}
+.home__cover__organizer {
+  margin: 0px auto;
+  max-width: 300px;
+  font-size: 14px;
+  color: #1d2088;
+  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B', sans-serif;
 }
 .home__section {
   border: 1px dashed #1d2088;
@@ -1084,12 +1094,11 @@ img {
   border: 1px dashed #1d2088;
   padding: 10px 15px 12px 15px;
 }
-.home__section__table thead tr:last-child td,
-.home__section__table tbody tr:last-child td {
-  text-align: center;
-}
 .home__section__table thead tr th {
-  width: calc(450px - 30px);
+  width: calc(450px - 75px);
+}
+.home__section__table thead tr th:first-child {
+  width: 70px;
 }
 .home__section__table tbody tr th {
   width: 70px;

@@ -14,6 +14,12 @@ block body
       h1
         img(src=metas.image + "images/home.png" alt=metas.title)
       img(src=metas.image + "images/window.png")
+      p.home__cover__organizer
+        | 主催：宮城県
+        br
+        | 共催：認定NPO法人ふるさと回帰支援センター
+        br
+        | 運営：シビレ株式会社
     section.home__section.home__section__overview#home__section__overview
       h2
         span
@@ -53,19 +59,15 @@ block body
       a.home__section__overview__pdf(href="javascript:void(0);" target="_blank" rel="nofollow")
         img(src=metas.image + "images/banner01.jpg" alt="イベント完全ガイド")
       p.home__section__supplement
-        | 宮城県内市町村と宮城県内企業○社が市町村と仕事の魅力をご紹介します。
+        | キーマン対談やしごとドラフトなど、宮城県への移住に役立つ各種コンテンツをご用意。
         br
-        | どこの話を聞いたらいいかわからない方は各市町村、企業の情報をご覧ください。
-        br
-        | 気になる市町村や仕事があれば、各市町村や企業に直接話が聞ける個別相談ブースを訪問してみてください。
-        br
-        | いずれも当日参加も可能ですが、参加人数が限られますので事前予約がおすすめです。
+        | 宮城県内全37市町村と宮城県内企業が暮らしや仕事のことなどご案内します。どこの話を聞いたらいいかわからない方は、むすび丸チャットにお気軽にご相談ください。コンシェルジュがご案内します。
     section.home__section.home__section__present#home__section__present
       h2
         span 参加者特典
       img(src=metas.image + "images/banner02.jpg" alt="先着50名限定 事前予約で「宮城まるごと味わいセット」 プレゼント")
       p.home__section__supplement
-        | 「宮城しごとドラフト」「個別相談ブース」に事前予約いただいた先着50名様に、
+        | 「個別相談ブース」に事前予約いただいた先着50名様に、
         br
         | 自宅にいながら宮城を味わうことができる「宮城まるごと味わいセット」をプレゼントします。
         br
@@ -221,8 +223,9 @@ block body
         table.home__section__table
           thead
             tr
-              th(colspan="2")
-                time.home__section__time(datetime="2021-02-13 13:00:00.000-14:00") 
+              th
+              th
+                time.home__section__time(datetime="2021-02-13 13:00:00.000-17:00") 
                   b
                     span DAY
                     span 1
@@ -230,9 +233,9 @@ block body
                     | 2月
                     span 13
                     | 日(土) 
-                    span 13:00~14:00
-              th(colspan="2")
-                time.home__section__time(datetime="2021-02-14 13:00:00.000-14:00") 
+                    span 13:00~17:00
+              th
+                time.home__section__time(datetime="2021-02-14 13:00:00.000-17:00") 
                   b
                     span DAY
                     span 2
@@ -240,58 +243,17 @@ block body
                     | 2月
                     span 14
                     | 日(日) 
-                    span 13:00~14:00
+                    span 13:00~17:00
           tbody
             tr
-              th 自治体
-              td 仙台市 / 石巻市 / 岩沼市 / 大河原市 / 大崎市 / 大郷町 / 大衡村 / 女川町 / 角田市 / 加美町 / 川崎町 / 栗原町 / 気仙沼市 / 蔵王町 / 塩釜市 / 色麻町 / 七ヶ宿町 / 七ヶ浜町
-              th 自治体
-              td 仙台市 / 柴田町 / 白石市 / 大和町 / 多賀城市 / 富谷市 / 登米市 / 名取市 / 東松島市 / 松島町 / 丸森町 / 美里町 / 南三陸町 / 村田町 / 山元町 / 利府町 / 涌谷町 / 垣理町
+              th(rowspan="2") 自治体
+              td 塩竈市 / 名取市 / 角田市 / 多賀城市 / 岩沼市 / 富谷市 / 蔵王町 / 七ヶ宿町 / 大河原町 / 村田町 / 七ヶ浜町 / 大和町 / 大衡村 / 色麻町 / 涌谷町 / 女川町
+              td 石巻市 / 気仙沼市 / 登米市 / 柴田町 / 川崎町 / 丸森町 / 亘理町 / 山元町 / 松島町 / 利府町 / 大郷町 / 美里町
+            tr
+              td(colspan="2") 仙台市 / 白石市 / 栗原市 / 東松島市 / 大崎市 / 加美町 / 南三陸町
             tr
               th 企業
               td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
-              th 企業
               td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
-            tr
-              td(colspan="4") 宮城移住サポートセンター
       a.home__section__button(href="javascript:void(0);") 個別相談ブースとは
     include ../include/_footer
-    script.
-      (function() {
-        var w = window;
-        if (w.ChannelIO) {
-          return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
-        }
-        var ch = function() {
-          ch.c(arguments);
-        };
-        ch.q = [];
-        ch.c = function(args) {
-          ch.q.push(args);
-        };
-        w.ChannelIO = ch;
-        function l() {
-          if (w.ChannelIOInitialized) {
-            return;
-          }
-          w.ChannelIOInitialized = true;
-          var s = document.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-          s.charset = 'UTF-8';
-          var x = document.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        }
-        if (document.readyState === 'complete') {
-          l();
-        } else if (window.attachEvent) {
-          window.attachEvent('onload', l);
-        } else {
-          window.addEventListener('DOMContentLoaded', l, false);
-          window.addEventListener('load', l, false);
-        }
-      })();
-      ChannelIO('boot', {
-        "pluginKey": "b1e25913-dc10-4b50-8161-a7f8da6fbecd"
-      });
