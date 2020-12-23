@@ -2,23 +2,28 @@
   var nav = {
     top:{
       url:"/",
-      name:"宮城まるごとオンライン移住フェア"
+      name:"宮城まるごとオンライン移住フェア",
+      blank: false
     },
     draft:{
       url:"/draft/",
-      name:"宮城しごとドラフト"
+      name:"宮城しごとドラフト",
+      blank: false
     },
     booth:{
       url:"javascript:void(0);",
-      name:"個別相談ブース"
+      name:"個別相談ブース",
+      blank: true
     },
     symposium:{
-      url:"javascript:void(0);",
-      name:"Miyagi Meeting"
+      url:"https://lp.sibire.co.jp/meeting",
+      name:"Miyagi Meeting",
+      blank: true
     },
     term:{
       url:"/privacy/",
-      name:"プライバシーポリシー"
+      name:"プライバシーポリシー",
+      blank: false
     }
   };
 
@@ -34,7 +39,7 @@ footer.footer
     ul.footer__nav
       - for(item in nav)
         li
-          a(href=`${nav[item].url}`)= nav[item].name
+          a(href=`${nav[item].url}` ,target=nav[item].blank === true ? '_blank' : '', rel=nav[item].blank === true ? 'nofollow' : '')= nav[item].name
     small Copyright &copy; Miyagi Prefectural Government. All Rights Reserved
 
 script.

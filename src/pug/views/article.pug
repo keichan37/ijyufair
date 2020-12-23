@@ -2,7 +2,11 @@ extends ../include/_layout
 block var
   - metas = {}
   - metas.title = '宮城しごとドラフト | '+ title
+  - metas.type = 'article'
   - metas.image = '../'
+  - metas.url = 'draft/' + category
+  - metas.ogp = 'draft/' + category + 'a.jpg'
+  - metas.description = subtitle1
   - page = 'draft'
 block body
   .article

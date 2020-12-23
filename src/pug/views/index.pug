@@ -2,9 +2,10 @@ extends ../include/_layout
 block var
   - metas = {}
   - metas.title = '宮城まるごとオンライン移住フェア'
-  - metas.url = ''
+  - metas.type = 'website'
   - metas.image = '/'
-  - metas.site_name = '宮城まるごとオンライン移住フェア'
+  - metas.url = ''
+  - metas.ogp = 'ogp.png'
   - metas.description = '宮城で暮らす、はたらくをわかりやすくご紹介！'
   - page = 'home'
 block body
@@ -214,7 +215,7 @@ block body
           img(src=metas.image + "images/banner03.jpg" alt="しごと編")
         a(href="javascript:void(0);")
           img(src=metas.image + "images/banner04.jpg" alt="暮らし編")
-      a.home__section__button(href="javascript:void(0);") Miyagi Meetingとは
+      a.home__section__button(href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow") Miyagi Meetingとは
 
     section.home__section#home__section__consultation
       h2
