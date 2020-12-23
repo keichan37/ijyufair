@@ -1,8 +1,8 @@
 -
   var nav = {
     home:{
-      url:"/",
-      name:"宮城まるごとオンライン移住フェア",
+      url: scroll,
+      name:"ステージイベント",
       blank: false
     },
     draft:{
@@ -29,14 +29,18 @@
   }
 
 header.header
-  #brand
-    a(href="/")
-      include ../../svg/brand.svg
-  input#drawer__check.drawer__input(type="checkbox")
-  label#drawer__icon.drawer__icon(for="drawer__check")
-    span
-  nav
-    ul.header__nav
-      - for(item in nav)
-        li(class=`header__nav__item ${currentCheck(item)}`)
-          a(href=`${nav[item].url}` ,target=nav[item].blank === true ? '_blank' : '', rel=nav[item].blank === true ? 'nofollow' : '')= nav[item].name
+  .header__inner
+    #brand
+      a(href="/")
+        include ../../svg/brand.svg
+    input#drawer__check.drawer__input(type="checkbox")
+    label#drawer__icon.drawer__icon(for="drawer__check")
+      span
+    nav
+      ul.header__nav
+        - for(item in nav)
+          li(class=`header__nav__item ${currentCheck(item)}`)
+            a(href=`${nav[item].url}` ,target=nav[item].blank === true ? '_blank' : '', rel=nav[item].blank === true ? 'nofollow' : '')
+              = nav[item].name
+              if nav[item].blank == true
+                i(data-feather="external-link")

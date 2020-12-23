@@ -47,7 +47,8 @@
   <body id="body">
     <div class="home">
       <header class="header">
-        <div id="brand"><a href="/"><svg version="1.1" id="brand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <div class="header__inner">
+          <div id="brand"><a href="/"><svg version="1.1" id="brand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 172 34.4" style="enable-background:new 0 0 172 34.4;" xml:space="preserve">
 <path class="st0" d="M23.7,9.6c0-0.5,0-1.1,0-1.5C23.6,6.3,22.2,5,20.3,5c-2-0.1-4.1-0.1-6.3-0.1V3.5c0-1.1-0.9-1.6-1.8-1.6
 	c-0.9,0-1.8,0.6-1.8,1.6v1.4C8.3,4.9,6.2,5,4,5C1.7,5,0.6,6.6,0.5,8c0,0.2,0,0.4,0,0.7c0,0.2,0,0.5,0,0.7c0,0.2,0,0.5,0,0.7
@@ -220,71 +221,80 @@
 </g>
 </svg>
 </a></div>
-        <input class="drawer__input" id="drawer__check" type="checkbox">
-        <label class="drawer__icon" id="drawer__icon" for="drawer__check"><span></span></label>
-        <nav>
-          <ul class="header__nav">
-            <li class="header__nav__item current"><a href="/" target="" rel="">宮城まるごとオンライン移住フェア</a></li>
-            <li class="header__nav__item "><a href="/draft/" target="" rel="">宮城しごとドラフト</a></li>
-            <li class="header__nav__item "><a href="http://52.197.25.167" target="_blank" rel="nofollow">個別相談ブース</a></li>
-            <li class="header__nav__item "><a href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow">Miyagi Meeting</a></li>
-          </ul>
-        </nav>
+          <input class="drawer__input" id="drawer__check" type="checkbox">
+          <label class="drawer__icon" id="drawer__icon" for="drawer__check"><span></span></label>
+          <nav>
+            <ul class="header__nav">
+              <li class="header__nav__item "><a href="#home__section__stage" target="" rel="">ステージイベント</a></li>
+              <li class="header__nav__item "><a href="/draft/" target="" rel="">宮城しごとドラフト</a></li>
+              <li class="header__nav__item "><a href="http://52.197.25.167" target="_blank" rel="nofollow">個別相談ブース<i data-feather="external-link"></i></a></li>
+              <li class="header__nav__item "><a href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow">Miyagi Meeting<i data-feather="external-link"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <div class="home__cover">
         <h1><img src="/images/home.png" alt="宮城まるごとオンライン移住フェア"></h1><img src="/images/window.png">
         <p class="home__cover__organizer">主催：宮城県<br>共催：認定NPO法人ふるさと回帰支援センター<br>運営：シビレ株式会社</p>
       </div>
-      <section class="home__section home__section__overview" id="home__section__overview">
-        <h2><span>宮城で暮らす、はたらくを<br>わかりやすくご紹介！</span></h2>
-        <p class="home__section__description">今すぐ転職したい方、<br>宮城への移住になんとなく興味がある方など、<br>どなたでもお気軽にお越しください。</p>
-        <div class="home__section__overview__buttons"><a class="home__section__overview__button" href="#home__section__stage">ステージイベント<i data-feather="arrow-down-circle"></i></a><a class="home__section__overview__button" href="#home__section__draft">宮城しごとドラフト<i data-feather="arrow-down-circle"></i></a><a class="home__section__overview__button" href="#home__section__symposium">Miyagi Meeting<i data-feather="arrow-down-circle"></i></a><a class="home__section__overview__button" href="#home__section__consultation">個別相談ブース<i data-feather="arrow-down-circle"></i></a>
-        </div><a class="home__section__overview__pdf" href="javascript:void(0);" target="_blank" rel="nofollow"><img src="/images/banner01.jpg" alt="イベント完全ガイド"></a>
-        <p class="home__section__supplement">キーマン対談やしごとドラフトなど、宮城県への移住に役立つ各種コンテンツをご用意。<br>宮城県内全35市町村と宮城県内企業が暮らしや仕事のことなどご案内します。どこの話を聞いたらいいかわからない方は、むすび丸チャットにお気軽にご相談ください。コンシェルジュがご案内します。</p>
-      </section>
-      <section class="home__section home__section__present" id="home__section__present">
-        <h2><span>参加者特典</span></h2><img src="/images/banner02.jpg" alt="先着50名限定 事前予約で「宮城まるごと味わいセット」 プレゼント">
-        <p class="home__section__supplement">「個別相談ブース」に事前予約いただいた先着50名様に、<br>自宅にいながら宮城を味わうことができる「宮城まるごと味わいセット」をプレゼントします。<br>イベント当日は、宮城の味を楽しみながら、是非ご参加ください！</p>
-      </section>
-      <section class="home__section home__section__stage" id="home__section__stage">
-        <h2><span>ステージイベント</span></h2>
-        <div class="home__section__stage__body">
-          <time class="home__section__time" datetime="2021-02-13 13:00:00.000-14:00"> <b><span>DAY</span><span>1</span></b><span>2月<span>13</span>日(土) <span>13:00~14:00</span></span></time>
-          <h3><span>宮城の変革期を歩んだ二人が語る</span>震災から10年被災地の新たな可能性を創造</h3>
-          <p>震災から10年。これまでと未来について、想いを語る1時間。<br>この10年間の取り組みや出来事、出会い、そして、これからの未来について、お二人にざっくばらんにお話いただきます。</p>
-          <figure><img src="images/home/00.jpg" alt="南三陸町長 佐藤仁">
-            <figcaption><span>南三陸町長 佐藤仁</span>1951年生まれ。南三陸町（旧志津川町）出身。69歳。<br />仙台商業高等学校在学時には、硬式野球部に所属し甲子園に出場。1992年旧志津川町議会議員に当選。2002年旧志津川町長に就任。2005年志津川町と歌津長の合併に伴い、初代南三陸町長に就任。現在4期目。2019年5月宮城県町村会長に就任。<br />1960年5月に発生したチリ地震津波による甚大な被害を教訓として、災害に強いまちづくりを推進するとともに、他に誇るべき豊かな自然と基幹産業である水産業を基軸に観光客の誘致促進を図るべく各種の事業を推進していた矢先、東日本大震災に見舞われた。
-            </figcaption>
-          </figure>
-          <figure><img src="images/home/01.jpg" alt="株式会社GRA 代表取締役CEO 岩佐大輝">
-            <figcaption><span>株式会社GRA 代表取締役CEO 岩佐大輝</span>1977年、宮城県亘理郡山元町生まれ。 24歳でＩＴベンチャーを起業。 現在日本およびインドで６つの法人のトップを務める。 2011年の東日本大震災後には、大きな被害を受けた故郷山元町の復興を目的にGRAを設立。 先端施設園芸を軸とした「地方の再創造」をライフワークとするようになる。 イチゴビジネスに構造変革を起こし、ひと粒1000円の「ミガキイチゴ」を生み出す。<br />著書に、『絶対にギブアップしたくない人のための 成功する農業』（朝日新聞出版・２０１８） 『甘酸っぱい経営』（株式会社ブックウォーカー・２０１５） 『99％の絶望の中に「1％のチャンス」は実る』（ダイヤモンド社・２０１４）
-            </figcaption>
-          </figure><a class="home__section__button" href="https://zfrmz.com/Mec3Fcez24TOmDPj3JLk" target="_blank" rel="nofollow">ステージイベントDAY1に予約</a>
-        </div>
-        <div class="home__section__stage__body">
-          <time class="home__section__time" datetime="2021-02-14 13:00:00.000-13:45"> <b><span>DAY</span><span>2</span></b><span>2月<span>14</span>日(日) <span>13:00~13:45</span></span></time>
-          <h3><span>宮城出身 経営者トークセッション</span>宮城のこれからの可能性</h3>
-          <p>宮城県を軸に事業を展開されている企業の経営層 3 名によるトークセッション。<br>宮城県内出身の事業継承者と起業家の視点で、宮城の未来とそれぞれの事業の展開や構想について、ざっくばらんにお話いただきます。</p>
-          <figure><img src="images/home/02.jpg" alt="Green-Room株式会社 代表取締役 野伏龍寛">
-            <figcaption><span>Green-Room株式会社 代表取締役 野伏龍寛</span>東北工業大学土木科卒業後、飲食業界に入り、バーや高級クラブで経験を積み、独立を目指すが恩師の死をきっかけに介護業界転身。現場のニーズを捉え、訪問医療マッサージで起業。Green-Room株式会社を設立。代表取締役に就任。<br />『私達は生活の質の向上に貢献し明るい空間を創造します。』この理念を実現するために訪問医療マッサージ事業（5事業所）、整骨院事業（17店舗）、整体院事業（2店舗）、リラクゼーション事業（11店舗）、障がい者グループホーム（1施設）を運営。業界を変えるリーディングカンパニーを目指している。
-            </figcaption>
-          </figure>
-          <figure><img src="images/home/03.jpg" alt="株式会社ウジエスーパー 常務取締役 氏家良太郎">
-            <figcaption><span>株式会社ウジエスーパー 常務取締役 氏家良太郎</span>1983年登米市生まれ。高校まで地元、その後、一念発起しイギリスに語学留学、英カレッジを卒業後、通信系の営業会社へ就職し5年間勤務。東日本大震災を機に、スーパーマーケットの仕事を固定観念でとらえるのではなく、生活者の近くに市場（イチバ）があることの価値を痛感し、父に頭を下げ手伝わせてもらうところから今に至る。ローカルスーパーは「D X（デジタル・トランスフォーメーション）」、「C X（カスタマー・エクスペリエンス）」の可能性の宝庫だと感じており、エンジニアの力を借りたく思っている今日この頃です。
-            </figcaption>
-          </figure>
-          <figure><img src="images/home/04.jpg" alt="株式会社丸山運送 取締役専務執行役員 三浦大">
-            <figcaption><span>株式会社丸山運送 取締役専務執行役員 三浦大</span>1988年生。宮城県多賀城市出身。関東学院大学経済学部卒業後、多数のアパレルブランドを全国展開する株式会社パルに入社。第５事業部配属となりPGO仙台港副店長や商品部メンズアシスタントバイヤーとして活躍。2020年から株式会社丸山運送の取締役専務執行役員に就任。
-            </figcaption>
-          </figure><a class="home__section__button" href="https://zfrmz.com/Mec3Fcez24TOmDPj3JLk" target="_blank" rel="nofollow">ステージイベントDAY2に予約</a>
-        </div>
-      </section>
-      <section class="home__section home__section__draft" id="home__section__draft">
-        <h2><span>宮城しごとドラフト</span></h2>
-        <p class="home__section__description">「宮城で働きたい」あなたと「宮城で働いてほしい」企業マッチングイベント。<br>あなたのことを市町村・企業担当者が直接スカウトします！</p>
-        <time class="home__section__time" datetime="2021-02-13 10:00:00.000-12:00"> <b><span>DAY</span><span>1</span></b><span>2月<span>13</span>日(土) <span>10:00~12:00</span></span></time>
-        <ul class="entry__flow">
-          <li><svg version="1.1" class="pictogram01" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+      <div id="home__section__overview">
+        <section class="home__section home__section__overview">
+          <h2><span>宮城で暮らす、はたらくを<br>わかりやすくご紹介！</span></h2>
+          <p class="home__section__description">今すぐ転職したい方、<br>宮城への移住になんとなく興味がある方など、<br>どなたでもお気軽にお越しください。</p>
+          <div class="home__section__overview__buttons"><a class="home__section__overview__button" href="#home__section__stage">ステージイベント<i data-feather="arrow-down-circle"></i></a><a class="home__section__overview__button" href="#home__section__draft">宮城しごとドラフト<i data-feather="arrow-down-circle"></i></a><a class="home__section__overview__button" href="#home__section__symposium">Miyagi Meeting<i data-feather="arrow-down-circle"></i></a><a class="home__section__overview__button" href="#home__section__consultation">個別相談ブース<i data-feather="arrow-down-circle"></i></a>
+            <label class="home__section__overview__button">コンシェルジュ</label>
+          </div><a class="home__section__link" href="javascript:void(0);" target="_blank" rel="nofollow"><img src="/images/banner01.jpg" alt="イベント完全ガイド"></a>
+          <p class="home__section__supplement">キーマン対談やしごとドラフトなど、宮城県への移住に役立つ各種コンテンツをご用意。<br>宮城県内全35市町村と宮城県内企業が暮らしや仕事のことなどご案内します。どこの話を聞いたらいいかわからない方は、むすび丸チャットにお気軽にご相談ください。コンシェルジュがご案内します。</p>
+        </section>
+      </div>
+      <div class="home__scroll" id="home__section__present">
+        <section class="home__section home__section__present">
+          <h2><span>参加者特典</span></h2><a class="home__section__link" href="javascript:void(0);"><img src="/images/banner02.jpg" alt="先着50名限定 事前予約で「宮城まるごと味わいセット」 プレゼント"></a>
+          <p class="home__section__supplement">「個別相談ブース」に事前予約いただいた先着50名様に、<br>自宅にいながら宮城を味わうことができる「宮城まるごと味わいセット」をプレゼントします。<br>イベント当日は、宮城の味を楽しみながら、是非ご参加ください！</p>
+        </section>
+      </div>
+      <div class="home__scroll" id="home__section__stage">
+        <section class="home__section home__section__stage">
+          <h2><span>ステージイベント</span></h2>
+          <div class="home__section__stage__body">
+            <time class="home__section__time" datetime="2021-02-13 13:00:00.000-14:00"> <b><span>DAY</span><span>1</span></b><span>2月<span>13</span>日(土) <span>13:00~14:00</span></span></time>
+            <h3><span>宮城の変革期を歩んだ二人が語る</span>震災から10年被災地の新たな可能性を創造</h3>
+            <p>震災から10年。これまでと未来について、想いを語る1時間。<br>この10年間の取り組みや出来事、出会い、そして、これからの未来について、お二人にざっくばらんにお話いただきます。</p>
+            <figure><img src="images/home/00.jpg" alt="南三陸町長 佐藤仁">
+              <figcaption><span>南三陸町長 佐藤仁</span>1951年生まれ。南三陸町（旧志津川町）出身。69歳。<br />仙台商業高等学校在学時には、硬式野球部に所属し甲子園に出場。1992年旧志津川町議会議員に当選。2002年旧志津川町長に就任。2005年志津川町と歌津長の合併に伴い、初代南三陸町長に就任。現在4期目。2019年5月宮城県町村会長に就任。<br />1960年5月に発生したチリ地震津波による甚大な被害を教訓として、災害に強いまちづくりを推進するとともに、他に誇るべき豊かな自然と基幹産業である水産業を基軸に観光客の誘致促進を図るべく各種の事業を推進していた矢先、東日本大震災に見舞われた。
+              </figcaption>
+            </figure>
+            <figure><img src="images/home/01.jpg" alt="株式会社GRA 代表取締役CEO 岩佐大輝">
+              <figcaption><span>株式会社GRA 代表取締役CEO 岩佐大輝</span>1977年、宮城県亘理郡山元町生まれ。 24歳でＩＴベンチャーを起業。 現在日本およびインドで６つの法人のトップを務める。 2011年の東日本大震災後には、大きな被害を受けた故郷山元町の復興を目的にGRAを設立。 先端施設園芸を軸とした「地方の再創造」をライフワークとするようになる。 イチゴビジネスに構造変革を起こし、ひと粒1000円の「ミガキイチゴ」を生み出す。<br />著書に、『絶対にギブアップしたくない人のための 成功する農業』（朝日新聞出版・２０１８） 『甘酸っぱい経営』（株式会社ブックウォーカー・２０１５） 『99％の絶望の中に「1％のチャンス」は実る』（ダイヤモンド社・２０１４）
+              </figcaption>
+            </figure><a class="home__section__button" href="https://zfrmz.com/Mec3Fcez24TOmDPj3JLk" target="_blank" rel="nofollow">ステージイベントDAY1に予約</a>
+          </div>
+          <div class="home__section__stage__body">
+            <time class="home__section__time" datetime="2021-02-14 13:00:00.000-13:45"> <b><span>DAY</span><span>2</span></b><span>2月<span>14</span>日(日) <span>13:00~13:45</span></span></time>
+            <h3><span>宮城出身経営者トークセッション</span>起業と事業継承 経営者が考える宮城のこれからの可能性</h3>
+            <p>宮城県を軸に事業を展開されている企業の経営層 3 名によるトークセッション。<br>宮城県内出身の事業継承者と起業家の視点で、宮城の未来とそれぞれの事業の展開や構想について、ざっくばらんにお話いただきます。</p>
+            <figure><img src="images/home/02.jpg" alt="Green-Room株式会社 代表取締役 野伏龍寛">
+              <figcaption><span>Green-Room株式会社 代表取締役 野伏龍寛</span>東北工業大学土木科卒業後、飲食業界に入り、バーや高級クラブで経験を積み、独立を目指すが恩師の死をきっかけに介護業界転身。現場のニーズを捉え、訪問医療マッサージで起業。Green-Room株式会社を設立。代表取締役に就任。<br />『私達は生活の質の向上に貢献し明るい空間を創造します。』この理念を実現するために訪問医療マッサージ事業（5事業所）、整骨院事業（17店舗）、整体院事業（2店舗）、リラクゼーション事業（11店舗）、障がい者グループホーム（1施設）を運営。業界を変えるリーディングカンパニーを目指している。
+              </figcaption>
+            </figure>
+            <figure><img src="images/home/03.jpg" alt="株式会社ウジエスーパー 常務取締役 氏家良太郎">
+              <figcaption><span>株式会社ウジエスーパー 常務取締役 氏家良太郎</span>1983年登米市生まれ。高校まで地元、その後、一念発起しイギリスに語学留学、英カレッジを卒業後、通信系の営業会社へ就職し5年間勤務。東日本大震災を機に、スーパーマーケットの仕事を固定観念でとらえるのではなく、生活者の近くに市場（イチバ）があることの価値を痛感し、父に頭を下げ手伝わせてもらうところから今に至る。ローカルスーパーは「D X（デジタル・トランスフォーメーション）」、「C X（カスタマー・エクスペリエンス）」の可能性の宝庫だと感じており、エンジニアの力を借りたく思っている今日この頃です。
+              </figcaption>
+            </figure>
+            <figure><img src="images/home/04.jpg" alt="株式会社丸山運送 取締役専務執行役員 三浦大">
+              <figcaption><span>株式会社丸山運送 取締役専務執行役員 三浦大</span>1988年生。宮城県多賀城市出身。関東学院大学経済学部卒業後、多数のアパレルブランドを全国展開する株式会社パルに入社。第５事業部配属となりPGO仙台港副店長や商品部メンズアシスタントバイヤーとして活躍。2020年から株式会社丸山運送の取締役専務執行役員に就任。
+              </figcaption>
+            </figure><a class="home__section__button" href="https://zfrmz.com/Mec3Fcez24TOmDPj3JLk" target="_blank" rel="nofollow">ステージイベントDAY2に予約</a>
+          </div>
+        </section>
+      </div>
+      <div class="home__scroll" id="home__section__draft">
+        <section class="home__section home__section__draft">
+          <h2><span>宮城しごとドラフト</span></h2>
+          <p class="home__section__description">「宮城で働きたい」あなたと「宮城で働いてほしい」企業マッチングイベント。<br>あなたのことを市町村・企業担当者が直接スカウトします！</p>
+          <time class="home__section__time" datetime="2021-02-13 10:00:00.000-12:00"> <b><span>DAY</span><span>1</span></b><span>2月<span>13</span>日(土) <span>10:00~12:00</span></span></time>
+          <ul class="entry__flow">
+            <li><svg version="1.1" class="pictogram01" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 164.1 145.7" style="enable-background:new 0 0 164.1 145.7;" xml:space="preserve">
 <g>
 	<path d="M24,66.6C5.6,66.6-4.4,51.7,1.9,33.3C8.1,14.9,28.1,0,46.5,0s28.3,14.9,22.1,33.3C62.4,51.7,42.4,66.6,24,66.6z M37,50.1
@@ -309,15 +319,15 @@
 </g>
 </svg>
 
-            <h3>まずはエントリー</h3>
-            <p>宮城ならではの仕事をWebでチェック。<br>あなたらしさを発揮できる仕事を選んでエントリー。</p><svg version="1.1" class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              <h3>まずはエントリー</h3>
+              <p>宮城ならではの仕事をWebでチェック。<br>あなたらしさを発揮できる仕事を選んでエントリー。</p><svg version="1.1" class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 27.6 80" style="enable-background:new 0 0 27.6 80;" xml:space="preserve">
 <path d="M2,80c-0.4,0-0.7-0.1-1.1-0.3c-0.9-0.6-1.2-1.8-0.6-2.8l23-36.9L0.3,3.1C-0.3,2.1,0,0.9,0.9,0.3C1.9-0.3,3.1,0,3.7,0.9
 	l23.6,38c0.4,0.6,0.4,1.5,0,2.1l-23.6,38C3.3,79.7,2.7,80,2,80z"/>
 </svg>
 
-          </li>
-          <li><svg version="1.1" class="pictogram02" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            </li>
+            <li><svg version="1.1" class="pictogram02" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 175.1 154.9" style="enable-background:new 0 0 175.1 154.9;" xml:space="preserve">
 <g>
 	<g>
@@ -361,15 +371,15 @@
 </g>
 </svg>
 
-            <h3>オンラインイベントへ参加</h3>
-            <p>自宅などからイベント参加。<br>オンラインで交流し、企業、市町村にスカウトしてもらおう。</p><svg version="1.1" class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              <h3>オンラインイベントへ参加</h3>
+              <p>自宅などからイベント参加。<br>オンラインで交流し、企業、市町村にスカウトしてもらおう。</p><svg version="1.1" class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 27.6 80" style="enable-background:new 0 0 27.6 80;" xml:space="preserve">
 <path d="M2,80c-0.4,0-0.7-0.1-1.1-0.3c-0.9-0.6-1.2-1.8-0.6-2.8l23-36.9L0.3,3.1C-0.3,2.1,0,0.9,0.9,0.3C1.9-0.3,3.1,0,3.7,0.9
 	l23.6,38c0.4,0.6,0.4,1.5,0,2.1l-23.6,38C3.3,79.7,2.7,80,2,80z"/>
 </svg>
 
-          </li>
-          <li><svg version="1.1" class="pictogram03" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            </li>
+            <li><svg version="1.1" class="pictogram03" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 176.6 153.1" style="enable-background:new 0 0 176.6 153.1;" xml:space="preserve">
 <g>
 	<g>
@@ -409,79 +419,84 @@
 </g>
 </svg>
 
-            <h3>個別相談ブースに参加</h3>
-            <p>さらに興味がある市町村や企業の話を個別相談ブースでじっくり聞いてみよう。</p>
-          </li>
-        </ul>
-        <h3><span>気になる仕事を探してエントリー</span></h3>
-        <ul class="job__list">
-          <li><a href="/draft/042056.html"><b>気仙沼市</b><img src="/images/draft/042056a.jpg" alt="">
-              <h3>気仙沼に漁師を増やす仕掛け人、募集！</h3></a></li>
-          <li><a href="/draft/042064.html"><b>白石市</b><img src="/images/draft/042064a.jpg" alt="">
-              <h3>城下町・白石に新たなファンをつくる立役者</h3></a></li>
-          <li><a href="/draft/042081.html"><b>角田市</b><img src="/images/draft/042081a.jpg" alt="">
-              <h3>農業に観光。地域資源を発掘し新たな価値をつくる</h3></a></li>
-          <li><a href="/draft/042082.html"><b>角田市</b><img src="/images/draft/042082a.jpg" alt="">
-              <h3>道の駅駅長の右腕として、地域を盛り上げる</h3></a></li>
-          <li><a href="/draft/042137.html"><b>栗原市</b><img src="/images/draft/042137a.jpg" alt="">
-              <h3>「森の守り人」募集！</h3></a></li>
-          <li><a href="/draft/042145.html"><b>東松島市</b><img src="/images/draft/042145a.jpg" alt="">
-              <h3>3年後の独立を目指す！東松島で地域に根差す仕事をつくる</h3></a></li>
-          <li><a href="/draft/043222.html"><b>村田町</b><img src="/images/draft/043222a.jpg" alt="">
-              <h3>歴史と文化のまち・村田町の魅力を発信</h3></a></li>
-          <li><a href="/draft/043231.html"><b>柴田町</b><img src="/images/draft/043231a.jpg" alt="">
-              <h3>地方で何かを始めたい、プレ起業家を募集！</h3></a></li>
-          <li><a href="/draft/046060.html"><b>南三陸町</b><img src="/images/draft/046060a.jpg" alt="">
-              <h3>南三陸杉を活用し「木材」を核にした地域振興を</h3></a></li>
-          <li><a href="/draft/046061.html"><b>南三陸町</b><img src="/images/draft/046061a.jpg" alt="">
-              <h3>カヤックにキャンプ、SUP…あそびを学びに！経営者候補募集</h3></a></li>
-          <li><a href="/draft/046062.html"><b>南三陸町</b><img src="/images/draft/046062a.jpg" alt="">
-              <h3>日本初！世界の海藻マーケットの拡大に挑戦</h3></a></li>
-        </ul><a class="home__section__button" href="/draft/">宮城しごとドラフトとは</a>
-      </section>
-      <section class="home__section home__section__symposium" id="home__section__symposium">
-        <h2><span>Miyagi Meeting<br>宮城にはまり隊!</span></h2>
-        <p class="home__section__description">地域と自分らしく関わりたい！そんな「あなたと地域の座談会」です。<br>海と山、両方あるのが宮城の魅力！ということで、さまざまな地域の人たちと、気軽に“おしゃべり”してみませんか？<br>どこに移住するか決まっていない。そもそも移住するかどうかもまだ分からない。<br>でも地域に何か関わりたい！ そんな漠然とした想いを持った方、大歓迎です。</p>
-        <div class="home__section__symposium__schedule">
-          <time class="home__section__time" datetime="2021-02-13 14:00:00.000-15:00"> <b><span>DAY</span><span>1</span></b><span>2月<span>13</span>日(土) </span></time>
-          <time class="home__section__time" datetime="2021-02-14 14:00:00.000-15:00"> <b><span>DAY</span><span>2</span></b><span>2月<span>14</span>日(日) </span></time><strong>両日: 14:00~15:00</strong>
-        </div>
-        <div class="home__section__symposium__banners"><a href="javascript:void(0);"><img src="/images/banner03.jpg" alt="しごと編"></a><a href="javascript:void(0);"><img src="/images/banner04.jpg" alt="暮らし編"></a></div><a class="home__section__button" href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow">Miyagi Meetingとは</a>
-      </section>
-      <section class="home__section home__section__consultation" id="home__section__consultation">
-        <h2><span>個別相談ブース</span></h2>
-        <p class="home__section__description">気になる市町村や仕事があれば、各市町村や企業に直接話が聞ける市町村ブースを訪問してみてください。<br>いずれも参加人数が限られますので事前予約がおすすめです。</p>
-        <div class="home__section__overflow-x">
-          <table class="home__section__table">
-            <thead>
-              <tr>
-                <th></th>
-                <th>
-                  <time class="home__section__time" datetime="2021-02-13 13:00:00.000-17:00"> <b><span>DAY</span><span>1</span></b><span>2月<span>13</span>日(土) <span>13:00~17:00</span></span></time>
-                </th>
-                <th>
-                  <time class="home__section__time" datetime="2021-02-14 13:00:00.000-17:00"> <b><span>DAY</span><span>2</span></b><span>2月<span>14</span>日(日) <span>13:00~17:00</span></span></time>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th rowspan="2">市町村</th>
-                <td>塩竈市 / 名取市 / 角田市 / 多賀城市 / 岩沼市 / 富谷市 / 蔵王町 / 七ヶ宿町 / 大河原町 / 村田町 / 七ヶ浜町 / 大和町 / 大衡村 / 色麻町 / 涌谷町 / 女川町</td>
-                <td>石巻市 / 気仙沼市 / 登米市 / 柴田町 / 川崎町 / 丸森町 / 亘理町 / 山元町 / 松島町 / 利府町 / 大郷町 / 美里町</td>
-              </tr>
-              <tr>
-                <td class="center" colspan="2">仙台市 / 白石市 / 栗原市 / 東松島市 / 大崎市 / 加美町 / 南三陸町</td>
-              </tr>
-              <tr>
-                <th>企業</th>
-                <td>〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社</td>
-                <td>〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社</td>
-              </tr>
-            </tbody>
-          </table>
-        </div><a class="home__section__button" href="http://52.197.25.167" target="_blank" rel="nofollow">個別相談ブースとは</a>
-      </section>
+              <h3>個別相談ブースに参加</h3>
+              <p>さらに興味がある市町村や企業の話を個別相談ブースでじっくり聞いてみよう。</p>
+            </li>
+          </ul>
+          <h3><span>気になる仕事を探してエントリー</span></h3>
+          <ul class="job__list">
+            <li><a href="/draft/042056.html"><b>気仙沼市</b><img src="/images/draft/042056a.jpg" alt="">
+                <h3>気仙沼に漁師を増やす仕掛け人、募集！</h3></a></li>
+            <li><a href="/draft/042064.html"><b>白石市</b><img src="/images/draft/042064a.jpg" alt="">
+                <h3>城下町・白石に新たなファンをつくる立役者</h3></a></li>
+            <li><a href="/draft/042081.html"><b>角田市</b><img src="/images/draft/042081a.jpg" alt="">
+                <h3>農業に観光。地域資源を発掘し新たな価値をつくる</h3></a></li>
+            <li><a href="/draft/042082.html"><b>角田市</b><img src="/images/draft/042082a.jpg" alt="">
+                <h3>道の駅駅長の右腕として、地域を盛り上げる</h3></a></li>
+            <li><a href="/draft/042137.html"><b>栗原市</b><img src="/images/draft/042137a.jpg" alt="">
+                <h3>「森の守り人」募集！</h3></a></li>
+            <li><a href="/draft/042145.html"><b>東松島市</b><img src="/images/draft/042145a.jpg" alt="">
+                <h3>3年後の独立を目指す！東松島で地域に根差す仕事をつくる</h3></a></li>
+            <li><a href="/draft/043222.html"><b>村田町</b><img src="/images/draft/043222a.jpg" alt="">
+                <h3>歴史と文化のまち・村田町の魅力を発信</h3></a></li>
+            <li><a href="/draft/043231.html"><b>柴田町</b><img src="/images/draft/043231a.jpg" alt="">
+                <h3>地方で何かを始めたい、プレ起業家を募集！</h3></a></li>
+            <li><a href="/draft/046060.html"><b>南三陸町</b><img src="/images/draft/046060a.jpg" alt="">
+                <h3>南三陸杉を活用し「木材」を核にした地域振興を</h3></a></li>
+            <li><a href="/draft/046061.html"><b>南三陸町</b><img src="/images/draft/046061a.jpg" alt="">
+                <h3>カヤックにキャンプ、SUP…あそびを学びに！経営者候補募集</h3></a></li>
+            <li><a href="/draft/046062.html"><b>南三陸町</b><img src="/images/draft/046062a.jpg" alt="">
+                <h3>日本初！世界の海藻マーケットの拡大に挑戦</h3></a></li>
+          </ul><a class="home__section__button" href="/draft/">宮城しごとドラフトとは</a>
+        </section>
+      </div>
+      <div class="home__scroll" id="home__section__symposium">
+        <section class="home__section home__section__symposium">
+          <h2><span>Miyagi Meeting<br>宮城にはまり隊!</span></h2>
+          <p class="home__section__description">地域と自分らしく関わりたい！そんな「あなたと地域の座談会」です。<br>海と山、両方あるのが宮城の魅力！ということで、さまざまな地域の人たちと、気軽に“おしゃべり”してみませんか？<br>どこに移住するか決まっていない。そもそも移住するかどうかもまだ分からない。<br>でも地域に何か関わりたい！ そんな漠然とした想いを持った方、大歓迎です。</p>
+          <div class="home__section__symposium__schedule">
+            <time class="home__section__time" datetime="2021-02-13 14:00:00.000-15:00"> <b><span>DAY</span><span>1</span></b><span>2月<span>13</span>日(土) </span></time>
+            <time class="home__section__time" datetime="2021-02-14 14:00:00.000-15:00"> <b><span>DAY</span><span>2</span></b><span>2月<span>14</span>日(日) </span></time><strong>両日: 14:00~15:00</strong>
+          </div>
+          <div class="home__section__symposium__banners"><a href="https://zfrmz.com/4OrzAXawVbLh1VAkSo45" target="_blank" rel="nofollow"><img src="/images/banner03.jpg" alt="しごと編"></a><a href="https://zfrmz.com/4OrzAXawVbLh1VAkSo45" target="_blank" rel="nofollow"><img src="/images/banner04.jpg" alt="暮らし編"></a></div><a class="home__section__button" href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow">Miyagi Meetingとは</a>
+        </section>
+      </div>
+      <div class="home__scroll last-child" id="home__section__consultation">
+        <section class="home__section home__section__consultation">
+          <h2><span>個別相談ブース</span></h2>
+          <p class="home__section__description">気になる市町村や仕事があれば、各市町村や企業に直接話が聞ける市町村ブースを訪問してみてください。<br>いずれも参加人数が限られますので事前予約がおすすめです。</p>
+          <div class="home__section__overflow-x">
+            <table class="home__section__table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>
+                    <time class="home__section__time" datetime="2021-02-13 13:00:00.000-17:00"> <b><span>DAY</span><span>1</span></b><span>2月<span>13</span>日(土) <span>13:00~17:00</span></span></time>
+                  </th>
+                  <th>
+                    <time class="home__section__time" datetime="2021-02-14 13:00:00.000-17:00"> <b><span>DAY</span><span>2</span></b><span>2月<span>14</span>日(日) <span>13:00~17:00</span></span></time>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="2">市町村</th>
+                  <td>塩竈市 / 名取市 / 角田市 / 多賀城市 / 岩沼市 / 富谷市 / 蔵王町 / 七ヶ宿町 / 大河原町 / 村田町 / 七ヶ浜町 / 大和町 / 大衡村 / 色麻町 / 涌谷町 / 女川町</td>
+                  <td>石巻市 / 気仙沼市 / 登米市 / 柴田町 / 川崎町 / 丸森町 / 亘理町 / 山元町 / 松島町 / 利府町 / 大郷町 / 美里町</td>
+                </tr>
+                <tr>
+                  <td class="center" colspan="2">仙台市 / 白石市 / 栗原市 / 東松島市 / 大崎市 / 加美町 / 南三陸町</td>
+                </tr>
+                <tr>
+                  <th>企業</th>
+                  <td>〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社</td>
+                  <td>〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><a class="home__section__button" href="http://52.197.25.167" target="_blank" rel="nofollow">個別相談ブースとは</a>
+        </section>
+      </div>
       <footer class="footer">
         <div class="footer__inner">
           <div class="footer__organization">
@@ -493,8 +508,8 @@
           <ul class="footer__nav">
             <li><a href="/" target="" rel="">宮城まるごとオンライン移住フェア</a></li>
             <li><a href="/draft/" target="" rel="">宮城しごとドラフト</a></li>
-            <li><a href="http://52.197.25.167" target="_blank" rel="nofollow">個別相談ブース</a></li>
-            <li><a href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow">Miyagi Meeting</a></li>
+            <li><a href="http://52.197.25.167" target="_blank" rel="nofollow">個別相談ブース<i data-feather="external-link"></i></a></li>
+            <li><a href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow">Miyagi Meeting<i data-feather="external-link"></i></a></li>
             <li><a href="/privacy/" target="" rel="">プライバシーポリシー</a></li>
           </ul><small>Copyright &copy; Miyagi Prefectural Government. All Rights Reserved</small>
         </div>

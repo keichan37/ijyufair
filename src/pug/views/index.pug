@@ -7,8 +7,9 @@ block var
   - metas.url = ''
   - metas.ogp = 'ogp.png'
   - metas.description = '宮城で暮らす、はたらくをわかりやすくご紹介！'
-  - page = 'home'
+  //- page = 'home'
   - form = 'https://zfrmz.com/Mec3Fcez24TOmDPj3JLk'
+  - scroll = '#home__section__stage'
 block body
   .home
     include ../include/_header
@@ -22,63 +23,154 @@ block body
         | 共催：認定NPO法人ふるさと回帰支援センター
         br
         | 運営：シビレ株式会社
-    section.home__section.home__section__overview#home__section__overview
-      h2
-        span
-          | 宮城で暮らす、はたらくを
+    #home__section__overview
+      section.home__section.home__section__overview
+        h2
+          span
+            | 宮城で暮らす、はたらくを
+            br
+            | わかりやすくご紹介！
+        p.home__section__description
+          | 今すぐ転職したい方、
           br
-          | わかりやすくご紹介！
-      p.home__section__description
-        | 今すぐ転職したい方、
-        br
-        | 宮城への移住になんとなく興味がある方など、
-        br
-        | どなたでもお気軽にお越しください。
-      .home__section__overview__buttons
-        -
-            var linklist = [
-              {
-                text: 'ステージイベント',
-                link: 'stage',
-              },
-              {
-                text: '宮城しごとドラフト',
-                link: 'draft',
-              },
-              {
-                text: 'Miyagi Meeting',
-                link: 'symposium',
-              },
-              {
-                text: '個別相談ブース',
-                link: 'consultation',
-              },
-            ]
-        each item in linklist
-          a.home__section__overview__button(href="#home__section__" + item.link)
-            !=item.text
-            i(data-feather="arrow-down-circle")
-      a.home__section__overview__pdf(href="javascript:void(0);" target="_blank" rel="nofollow")
-        img(src=metas.image + "images/banner01.jpg" alt="イベント完全ガイド")
-      p.home__section__supplement
-        | キーマン対談やしごとドラフトなど、宮城県への移住に役立つ各種コンテンツをご用意。
-        br
-        | 宮城県内全35市町村と宮城県内企業が暮らしや仕事のことなどご案内します。どこの話を聞いたらいいかわからない方は、むすび丸チャットにお気軽にご相談ください。コンシェルジュがご案内します。
-    section.home__section.home__section__present#home__section__present
-      h2
-        span 参加者特典
-      img(src=metas.image + "images/banner02.jpg" alt="先着50名限定 事前予約で「宮城まるごと味わいセット」 プレゼント")
-      p.home__section__supplement
-        | 「個別相談ブース」に事前予約いただいた先着50名様に、
-        br
-        | 自宅にいながら宮城を味わうことができる「宮城まるごと味わいセット」をプレゼントします。
-        br
-        | イベント当日は、宮城の味を楽しみながら、是非ご参加ください！
-    section.home__section.home__section__stage#home__section__stage
-      h2
-        span ステージイベント
-      .home__section__stage__body
-        time.home__section__time(datetime="2021-02-13 13:00:00.000-14:00") 
+          | 宮城への移住になんとなく興味がある方など、
+          br
+          | どなたでもお気軽にお越しください。
+        .home__section__overview__buttons
+          -
+              var linklist = [
+                {
+                  text: 'ステージイベント',
+                  link: 'stage',
+                },
+                {
+                  text: '宮城しごとドラフト',
+                  link: 'draft',
+                },
+                {
+                  text: 'Miyagi Meeting',
+                  link: 'symposium',
+                },
+                {
+                  text: '個別相談ブース',
+                  link: 'consultation',
+                },
+              ]
+          each item in linklist
+            a.home__section__overview__button(href="#home__section__" + item.link)
+              !=item.text
+              i(data-feather="arrow-down-circle")
+          label.home__section__overview__button コンシェルジュ
+        a.home__section__link(href="javascript:void(0);" target="_blank" rel="nofollow")
+          img(src=metas.image + "images/banner01.jpg" alt="イベント完全ガイド")
+        p.home__section__supplement
+          | キーマン対談やしごとドラフトなど、宮城県への移住に役立つ各種コンテンツをご用意。
+          br
+          | 宮城県内全35市町村と宮城県内企業が暮らしや仕事のことなどご案内します。どこの話を聞いたらいいかわからない方は、むすび丸チャットにお気軽にご相談ください。コンシェルジュがご案内します。
+    #home__section__present.home__scroll
+      section.home__section.home__section__present
+        h2
+          span 参加者特典
+        a.home__section__link(href="javascript:void(0);")
+          img(src=metas.image + "images/banner02.jpg" alt="先着50名限定 事前予約で「宮城まるごと味わいセット」 プレゼント")
+        p.home__section__supplement
+          | 「個別相談ブース」に事前予約いただいた先着50名様に、
+          br
+          | 自宅にいながら宮城を味わうことができる「宮城まるごと味わいセット」をプレゼントします。
+          br
+          | イベント当日は、宮城の味を楽しみながら、是非ご参加ください！
+    #home__section__stage.home__scroll
+      section.home__section.home__section__stage
+        h2
+          span ステージイベント
+        .home__section__stage__body
+          time.home__section__time(datetime="2021-02-13 13:00:00.000-14:00") 
+            b
+              span DAY
+              span 1
+            span
+              | 2月
+              span 13
+              | 日(土) 
+              span 13:00~14:00
+          h3
+            span 宮城の変革期を歩んだ二人が語る
+            | 震災から10年被災地の新たな可能性を創造
+          p
+            | 震災から10年。これまでと未来について、想いを語る1時間。
+            br
+            | この10年間の取り組みや出来事、出会い、そして、これからの未来について、お二人にざっくばらんにお話いただきます。
+          -
+              var speakerlist1 = [
+                {
+                  num: 0,
+                  speaker: '南三陸町長 佐藤仁',
+                  introduction: '1951年生まれ。南三陸町（旧志津川町）出身。69歳。<br />仙台商業高等学校在学時には、硬式野球部に所属し甲子園に出場。1992年旧志津川町議会議員に当選。2002年旧志津川町長に就任。2005年志津川町と歌津長の合併に伴い、初代南三陸町長に就任。現在4期目。2019年5月宮城県町村会長に就任。<br />1960年5月に発生したチリ地震津波による甚大な被害を教訓として、災害に強いまちづくりを推進するとともに、他に誇るべき豊かな自然と基幹産業である水産業を基軸に観光客の誘致促進を図るべく各種の事業を推進していた矢先、東日本大震災に見舞われた。',
+                },
+                {
+                  num: 1,
+                  speaker: '株式会社GRA 代表取締役CEO 岩佐大輝',
+                  introduction: '1977年、宮城県亘理郡山元町生まれ。 24歳でＩＴベンチャーを起業。 現在日本およびインドで６つの法人のトップを務める。 2011年の東日本大震災後には、大きな被害を受けた故郷山元町の復興を目的にGRAを設立。 先端施設園芸を軸とした「地方の再創造」をライフワークとするようになる。 イチゴビジネスに構造変革を起こし、ひと粒1000円の「ミガキイチゴ」を生み出す。<br />著書に、『絶対にギブアップしたくない人のための 成功する農業』（朝日新聞出版・２０１８） 『甘酸っぱい経営』（株式会社ブックウォーカー・２０１５） 『99％の絶望の中に「1％のチャンス」は実る』（ダイヤモンド社・２０１４）',
+                },
+              ]
+          each item in speakerlist1
+            figure
+              img(src="images/home/0" + item.num + ".jpg" alt=item.speaker)
+              figcaption
+                span!=item.speaker
+                !=item.introduction
+          a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY1に予約
+        .home__section__stage__body
+          time.home__section__time(datetime="2021-02-14 13:00:00.000-13:45") 
+            b
+              span DAY
+              span 2
+            span
+              | 2月
+              span 14
+              | 日(日) 
+              span 13:00~13:45
+          h3
+            span 宮城出身経営者トークセッション
+            | 起業と事業継承 経営者が考える宮城のこれからの可能性
+          p
+            | 宮城県を軸に事業を展開されている企業の経営層 3 名によるトークセッション。
+            br
+            | 宮城県内出身の事業継承者と起業家の視点で、宮城の未来とそれぞれの事業の展開や構想について、ざっくばらんにお話いただきます。
+          -
+              var speakerlist2 = [
+                {
+                  num: 2,
+                  speaker: 'Green-Room株式会社 代表取締役 野伏龍寛',
+                  introduction: '東北工業大学土木科卒業後、飲食業界に入り、バーや高級クラブで経験を積み、独立を目指すが恩師の死をきっかけに介護業界転身。現場のニーズを捉え、訪問医療マッサージで起業。Green-Room株式会社を設立。代表取締役に就任。<br />『私達は生活の質の向上に貢献し明るい空間を創造します。』この理念を実現するために訪問医療マッサージ事業（5事業所）、整骨院事業（17店舗）、整体院事業（2店舗）、リラクゼーション事業（11店舗）、障がい者グループホーム（1施設）を運営。業界を変えるリーディングカンパニーを目指している。',
+                },
+                {
+                  num: 3,
+                  speaker: '株式会社ウジエスーパー 常務取締役 氏家良太郎',
+                  introduction: '1983年登米市生まれ。高校まで地元、その後、一念発起しイギリスに語学留学、英カレッジを卒業後、通信系の営業会社へ就職し5年間勤務。東日本大震災を機に、スーパーマーケットの仕事を固定観念でとらえるのではなく、生活者の近くに市場（イチバ）があることの価値を痛感し、父に頭を下げ手伝わせてもらうところから今に至る。ローカルスーパーは「D X（デジタル・トランスフォーメーション）」、「C X（カスタマー・エクスペリエンス）」の可能性の宝庫だと感じており、エンジニアの力を借りたく思っている今日この頃です。',
+                },
+                {
+                  num: 4,
+                  speaker: '株式会社丸山運送 取締役専務執行役員 三浦大',
+                  introduction: '1988年生。宮城県多賀城市出身。関東学院大学経済学部卒業後、多数のアパレルブランドを全国展開する株式会社パルに入社。第５事業部配属となりPGO仙台港副店長や商品部メンズアシスタントバイヤーとして活躍。2020年から株式会社丸山運送の取締役専務執行役員に就任。',
+                },
+              ]
+          each item in speakerlist2
+            figure
+              img(src="images/home/0" + item.num + ".jpg" alt=item.speaker)
+              figcaption
+                span!=item.speaker
+                !=item.introduction
+          a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY2に予約
+    #home__section__draft.home__scroll
+      section.home__section.home__section__draft
+        h2
+          span 宮城しごとドラフト
+        p.home__section__description
+          | 「宮城で働きたい」あなたと「宮城で働いてほしい」企業マッチングイベント。
+          br
+          | あなたのことを市町村・企業担当者が直接スカウトします！
+        time.home__section__time(datetime="2021-02-13 10:00:00.000-12:00") 
           b
             span DAY
             span 1
@@ -86,180 +178,97 @@ block body
             | 2月
             span 13
             | 日(土) 
-            span 13:00~14:00
+            span 10:00~12:00
+
+        include ../include/_entryflow
         h3
-          span 宮城の変革期を歩んだ二人が語る
-          | 震災から10年被災地の新たな可能性を創造
-        p
-          | 震災から10年。これまでと未来について、想いを語る1時間。
-          br
-          | この10年間の取り組みや出来事、出会い、そして、これからの未来について、お二人にざっくばらんにお話いただきます。
-        -
-            var speakerlist1 = [
-              {
-                num: 0,
-                speaker: '南三陸町長 佐藤仁',
-                introduction: '1951年生まれ。南三陸町（旧志津川町）出身。69歳。<br />仙台商業高等学校在学時には、硬式野球部に所属し甲子園に出場。1992年旧志津川町議会議員に当選。2002年旧志津川町長に就任。2005年志津川町と歌津長の合併に伴い、初代南三陸町長に就任。現在4期目。2019年5月宮城県町村会長に就任。<br />1960年5月に発生したチリ地震津波による甚大な被害を教訓として、災害に強いまちづくりを推進するとともに、他に誇るべき豊かな自然と基幹産業である水産業を基軸に観光客の誘致促進を図るべく各種の事業を推進していた矢先、東日本大震災に見舞われた。',
-              },
-              {
-                num: 1,
-                speaker: '株式会社GRA 代表取締役CEO 岩佐大輝',
-                introduction: '1977年、宮城県亘理郡山元町生まれ。 24歳でＩＴベンチャーを起業。 現在日本およびインドで６つの法人のトップを務める。 2011年の東日本大震災後には、大きな被害を受けた故郷山元町の復興を目的にGRAを設立。 先端施設園芸を軸とした「地方の再創造」をライフワークとするようになる。 イチゴビジネスに構造変革を起こし、ひと粒1000円の「ミガキイチゴ」を生み出す。<br />著書に、『絶対にギブアップしたくない人のための 成功する農業』（朝日新聞出版・２０１８） 『甘酸っぱい経営』（株式会社ブックウォーカー・２０１５） 『99％の絶望の中に「1％のチャンス」は実る』（ダイヤモンド社・２０１４）',
-              },
-            ]
-        each item in speakerlist1
-          figure
-            img(src="images/home/0" + item.num + ".jpg" alt=item.speaker)
-            figcaption
-              span!=item.speaker
-              !=item.introduction
-        a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY1に予約
-      .home__section__stage__body
-        time.home__section__time(datetime="2021-02-14 13:00:00.000-13:45") 
-          b
-            span DAY
-            span 2
-          span
-            | 2月
-            span 14
-            | 日(日) 
-            span 13:00~13:45
-        h3
-          span 宮城出身 経営者トークセッション
-          | 宮城のこれからの可能性
-        p
-          | 宮城県を軸に事業を展開されている企業の経営層 3 名によるトークセッション。
-          br
-          | 宮城県内出身の事業継承者と起業家の視点で、宮城の未来とそれぞれの事業の展開や構想について、ざっくばらんにお話いただきます。
-        -
-            var speakerlist2 = [
-              {
-                num: 2,
-                speaker: 'Green-Room株式会社 代表取締役 野伏龍寛',
-                introduction: '東北工業大学土木科卒業後、飲食業界に入り、バーや高級クラブで経験を積み、独立を目指すが恩師の死をきっかけに介護業界転身。現場のニーズを捉え、訪問医療マッサージで起業。Green-Room株式会社を設立。代表取締役に就任。<br />『私達は生活の質の向上に貢献し明るい空間を創造します。』この理念を実現するために訪問医療マッサージ事業（5事業所）、整骨院事業（17店舗）、整体院事業（2店舗）、リラクゼーション事業（11店舗）、障がい者グループホーム（1施設）を運営。業界を変えるリーディングカンパニーを目指している。',
-              },
-              {
-                num: 3,
-                speaker: '株式会社ウジエスーパー 常務取締役 氏家良太郎',
-                introduction: '1983年登米市生まれ。高校まで地元、その後、一念発起しイギリスに語学留学、英カレッジを卒業後、通信系の営業会社へ就職し5年間勤務。東日本大震災を機に、スーパーマーケットの仕事を固定観念でとらえるのではなく、生活者の近くに市場（イチバ）があることの価値を痛感し、父に頭を下げ手伝わせてもらうところから今に至る。ローカルスーパーは「D X（デジタル・トランスフォーメーション）」、「C X（カスタマー・エクスペリエンス）」の可能性の宝庫だと感じており、エンジニアの力を借りたく思っている今日この頃です。',
-              },
-              {
-                num: 4,
-                speaker: '株式会社丸山運送 取締役専務執行役員 三浦大',
-                introduction: '1988年生。宮城県多賀城市出身。関東学院大学経済学部卒業後、多数のアパレルブランドを全国展開する株式会社パルに入社。第５事業部配属となりPGO仙台港副店長や商品部メンズアシスタントバイヤーとして活躍。2020年から株式会社丸山運送の取締役専務執行役員に就任。',
-              },
-            ]
-        each item in speakerlist2
-          figure
-            img(src="images/home/0" + item.num + ".jpg" alt=item.speaker)
-            figcaption
-              span!=item.speaker
-              !=item.introduction
-        a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY2に予約
-    section.home__section.home__section__draft#home__section__draft
-      h2
-        span 宮城しごとドラフト
-      p.home__section__description
-        | 「宮城で働きたい」あなたと「宮城で働いてほしい」企業マッチングイベント。
-        br
-        | あなたのことを市町村・企業担当者が直接スカウトします！
-      time.home__section__time(datetime="2021-02-13 10:00:00.000-12:00") 
-        b
-          span DAY
-          span 1
-        span
-          | 2月
-          span 13
-          | 日(土) 
-          span 10:00~12:00
+          span 気になる仕事を探してエントリー
+        include ../include/_joblist
 
-      include ../include/_entryflow
-      h3
-        span 気になる仕事を探してエントリー
-      include ../include/_joblist
-
-      a.home__section__button(href="/draft/") 宮城しごとドラフトとは
-    section.home__section.home__section__symposium#home__section__symposium
-      h2
-        span
-          | Miyagi Meeting
+        a.home__section__button(href="/draft/") 宮城しごとドラフトとは
+    #home__section__symposium.home__scroll
+      section.home__section.home__section__symposium
+        h2
+          span
+            | Miyagi Meeting
+            br
+            | 宮城にはまり隊!
+        p.home__section__description
+          | 地域と自分らしく関わりたい！そんな「あなたと地域の座談会」です。
           br
-          | 宮城にはまり隊!
-      p.home__section__description
-        | 地域と自分らしく関わりたい！そんな「あなたと地域の座談会」です。
-        br
-        | 海と山、両方あるのが宮城の魅力！ということで、さまざまな地域の人たちと、気軽に“おしゃべり”してみませんか？
-        br
-        | どこに移住するか決まっていない。そもそも移住するかどうかもまだ分からない。
-        br
-        | でも地域に何か関わりたい！ そんな漠然とした想いを持った方、大歓迎です。
-      .home__section__symposium__schedule
-        time.home__section__time(datetime="2021-02-13 14:00:00.000-15:00") 
-          b
-            span DAY
-            span 1
-          span
-            | 2月
-            span 13
-            | 日(土) 
-        time.home__section__time(datetime="2021-02-14 14:00:00.000-15:00") 
-          b
-            span DAY
-            span 2
-          span
-            | 2月
-            span 14
-            | 日(日) 
-        strong 両日: 14:00~15:00
-      .home__section__symposium__banners
-        a(href="javascript:void(0);")
-          img(src=metas.image + "images/banner03.jpg" alt="しごと編")
-        a(href="javascript:void(0);")
-          img(src=metas.image + "images/banner04.jpg" alt="暮らし編")
-      a.home__section__button(href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow") Miyagi Meetingとは
+          | 海と山、両方あるのが宮城の魅力！ということで、さまざまな地域の人たちと、気軽に“おしゃべり”してみませんか？
+          br
+          | どこに移住するか決まっていない。そもそも移住するかどうかもまだ分からない。
+          br
+          | でも地域に何か関わりたい！ そんな漠然とした想いを持った方、大歓迎です。
+        .home__section__symposium__schedule
+          time.home__section__time(datetime="2021-02-13 14:00:00.000-15:00") 
+            b
+              span DAY
+              span 1
+            span
+              | 2月
+              span 13
+              | 日(土) 
+          time.home__section__time(datetime="2021-02-14 14:00:00.000-15:00") 
+            b
+              span DAY
+              span 2
+            span
+              | 2月
+              span 14
+              | 日(日) 
+          strong 両日: 14:00~15:00
+        .home__section__symposium__banners
+          a(href="https://zfrmz.com/4OrzAXawVbLh1VAkSo45" target="_blank" rel="nofollow")
+            img(src=metas.image + "images/banner03.jpg" alt="しごと編")
+          a(href="https://zfrmz.com/4OrzAXawVbLh1VAkSo45" target="_blank" rel="nofollow")
+            img(src=metas.image + "images/banner04.jpg" alt="暮らし編")
+        a.home__section__button(href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow") Miyagi Meetingとは
 
-    section.home__section.home__section__consultation#home__section__consultation
-      h2
-        span 個別相談ブース
-      p.home__section__description
-        | 気になる市町村や仕事があれば、各市町村や企業に直接話が聞ける市町村ブースを訪問してみてください。
-        br
-        | いずれも参加人数が限られますので事前予約がおすすめです。
-      .home__section__overflow-x
-        table.home__section__table
-          thead
-            tr
-              th
-              th
-                time.home__section__time(datetime="2021-02-13 13:00:00.000-17:00") 
-                  b
-                    span DAY
-                    span 1
-                  span
-                    | 2月
-                    span 13
-                    | 日(土) 
-                    span 13:00~17:00
-              th
-                time.home__section__time(datetime="2021-02-14 13:00:00.000-17:00") 
-                  b
-                    span DAY
-                    span 2
-                  span
-                    | 2月
-                    span 14
-                    | 日(日) 
-                    span 13:00~17:00
-          tbody
-            tr
-              th(rowspan="2") 市町村
-              td 塩竈市 / 名取市 / 角田市 / 多賀城市 / 岩沼市 / 富谷市 / 蔵王町 / 七ヶ宿町 / 大河原町 / 村田町 / 七ヶ浜町 / 大和町 / 大衡村 / 色麻町 / 涌谷町 / 女川町
-              td 石巻市 / 気仙沼市 / 登米市 / 柴田町 / 川崎町 / 丸森町 / 亘理町 / 山元町 / 松島町 / 利府町 / 大郷町 / 美里町
-            tr
-              td.center(colspan="2") 仙台市 / 白石市 / 栗原市 / 東松島市 / 大崎市 / 加美町 / 南三陸町
-            tr
-              th 企業
-              td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
-              td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
-      a.home__section__button(href="http://52.197.25.167" target="_blank" rel="nofollow") 個別相談ブースとは
+    #home__section__consultation.home__scroll.last-child
+      section.home__section.home__section__consultation
+        h2
+          span 個別相談ブース
+        p.home__section__description
+          | 気になる市町村や仕事があれば、各市町村や企業に直接話が聞ける市町村ブースを訪問してみてください。
+          br
+          | いずれも参加人数が限られますので事前予約がおすすめです。
+        .home__section__overflow-x
+          table.home__section__table
+            thead
+              tr
+                th
+                th
+                  time.home__section__time(datetime="2021-02-13 13:00:00.000-17:00") 
+                    b
+                      span DAY
+                      span 1
+                    span
+                      | 2月
+                      span 13
+                      | 日(土) 
+                      span 13:00~17:00
+                th
+                  time.home__section__time(datetime="2021-02-14 13:00:00.000-17:00") 
+                    b
+                      span DAY
+                      span 2
+                    span
+                      | 2月
+                      span 14
+                      | 日(日) 
+                      span 13:00~17:00
+            tbody
+              tr
+                th(rowspan="2") 市町村
+                td 塩竈市 / 名取市 / 角田市 / 多賀城市 / 岩沼市 / 富谷市 / 蔵王町 / 七ヶ宿町 / 大河原町 / 村田町 / 七ヶ浜町 / 大和町 / 大衡村 / 色麻町 / 涌谷町 / 女川町
+                td 石巻市 / 気仙沼市 / 登米市 / 柴田町 / 川崎町 / 丸森町 / 亘理町 / 山元町 / 松島町 / 利府町 / 大郷町 / 美里町
+              tr
+                td.center(colspan="2") 仙台市 / 白石市 / 栗原市 / 東松島市 / 大崎市 / 加美町 / 南三陸町
+              tr
+                th 企業
+                td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
+                td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
+        a.home__section__button(href="http://52.197.25.167" target="_blank" rel="nofollow") 個別相談ブースとは
     include ../include/_footer

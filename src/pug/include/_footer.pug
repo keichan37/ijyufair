@@ -39,7 +39,10 @@ footer.footer
     ul.footer__nav
       - for(item in nav)
         li
-          a(href=`${nav[item].url}` ,target=nav[item].blank === true ? '_blank' : '', rel=nav[item].blank === true ? 'nofollow' : '')= nav[item].name
+          a(href=`${nav[item].url}` ,target=nav[item].blank === true ? '_blank' : '', rel=nav[item].blank === true ? 'nofollow' : '')
+            = nav[item].name
+            if nav[item].blank == true
+              i(data-feather="external-link")
     small Copyright &copy; Miyagi Prefectural Government. All Rights Reserved
 
 script.

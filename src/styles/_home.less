@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top 50px center;
+  padding-top: 80px;
   &__cover {
     padding-bottom: 100px;
     position: relative;
@@ -28,11 +29,16 @@
       font-family: @sans-serif-b;
     }
   }
+  &__scroll {
+    padding-top: 80px;
+    &.last-child {
+      margin-bottom: 80px;
+    }
+  }
   &__section {
     border: 1px dashed @blue;
     border-top: none;
     .container;
-    margin-bottom: 60px;
     background-color: @white;
     background-image: url("../images/pattern.png");
     background-repeat:  no-repeat;
@@ -58,6 +64,27 @@
     &__button {
       .button(@blue, @yellow);
       font-size: 21px;
+    }
+    &__link {
+      display: block;
+      max-width: 660px;
+      margin: 0px auto;
+      > img {
+        .transition;
+        width: 660px;
+        height: auto;
+        margin: 0px auto;
+        margin-bottom: 20px;
+        .border-radius(10px);
+        border: 5px solid @pink;
+        .border-box;
+      }
+      &:hover {
+        > img {
+          border-color: fade(@pink,70%);
+          .opacity;
+        }
+      }
     }
     &__time {
       .flex;
@@ -155,27 +182,6 @@
           top: 50%;
           right: 0;
           margin: -12px 15px 0 0;
-        }
-      }
-      &__pdf {
-        display: block;
-        max-width: 660px;
-        margin: 0px auto;
-        > img {
-          .transition;
-          width: 660px;
-          height: auto;
-          margin: 0px auto;
-          margin-bottom: 20px;
-          .border-radius(10px);
-          border: 5px solid @pink;
-          .border-box;
-        }
-        &:hover {
-          > img {
-            border-color: fade(@pink,70%);
-            .opacity;
-          }
         }
       }
     }
