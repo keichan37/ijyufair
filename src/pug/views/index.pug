@@ -8,6 +8,7 @@ block var
   - metas.ogp = 'ogp.png'
   - metas.description = '宮城で暮らす、はたらくをわかりやすくご紹介！'
   - page = 'home'
+  - form = 'https://zfrmz.com/Mec3Fcez24TOmDPj3JLk'
 block body
   .home
     include ../include/_header
@@ -112,7 +113,7 @@ block body
             figcaption
               span!=item.speaker
               !=item.introduction
-        a.home__section__button(href="javascript:void(0);") ステージイベントDAY1に予約
+        a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY1に予約
       .home__section__stage__body
         time.home__section__time(datetime="2021-02-14 13:00:00.000-13:45") 
           b
@@ -154,7 +155,7 @@ block body
             figcaption
               span!=item.speaker
               !=item.introduction
-        a.home__section__button(href="javascript:void(0);") ステージイベントDAY2に予約
+        a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY2に予約
     section.home__section.home__section__draft#home__section__draft
       h2
         span 宮城しごとドラフト

@@ -8,6 +8,7 @@ block var
   - metas.ogp = 'draft/' + category + 'a.jpg'
   - metas.description = subtitle1
   - page = 'draft'
+  - entry = 'https://zfrmz.com/yDP2YrEFTznFp52mS8ec'
 block body
   .article
     include ../include/_header
@@ -33,7 +34,7 @@ block body
         !=body3
         br
         a(href=link) #{municipality}に移住相談をする
-      a.article__button(href="javascript:void(0);") しごとドラフトに参加する
+      a.article__button(href=entry target="_blank" rel="nofollow") しごとドラフトに参加する
       unless category=="042137"
         h2
           span 地域おこし協力隊とは

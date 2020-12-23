@@ -8,13 +8,14 @@ block var
   - metas.ogp = 'draft/ogp.png'
   - metas.description = 'やりたい仕事にエントリーして、あたらしいキャリアをスタートさせよう。'
   - page = 'draft'
+  - entry = 'https://zfrmz.com/yDP2YrEFTznFp52mS8ec'
 block body
   .draft
     include ../include/_header
     .draft__cover
       h1
         img(src="" + metas.image + "images/draft.png" alt=metas.title)
-      a.draft__section__button(href="javascript:void(0);") 参加エントリー
+      a.draft__section__button(href=entry target="_blank" rel="nofollow") 参加エントリー
       time
         img(src="" + metas.image + "images/draft_datetime.png" alt="2021.1.13 [土] 10:00~12:00")
     section.draft__section
@@ -105,7 +106,7 @@ block body
     section.draft__section.last-child
       h2
         span エントリーフォーム
-      a.draft__section__button(href="javascript:void(0);") 参加エントリー
+      a.draft__section__button(href=entry target="_blank" rel="nofollow") 参加エントリー
       p エントリー時に、あなた自身の経験・PRポイントを明記し、しっかりアピールしよう。
 
     include ../include/_footer
