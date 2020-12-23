@@ -1277,6 +1277,12 @@ img {
 .home__section__draft .job__list {
   margin-bottom: 30px;
 }
+.home__section__draft > .home__section__description {
+  max-width: 580px;
+}
+.home__section__symposium > .home__section__description {
+  max-width: 600px;
+}
 .home__section__symposium__banners {
   display: -webkit-flex;
   display: flex;
@@ -1347,6 +1353,9 @@ img {
 .home__section__symposium__schedule strong {
   font-size: 22px;
   margin-bottom: 25px;
+}
+.home__section__consultation > .home__section__description {
+  max-width: 500px;
 }
 @media (max-width: 767px) {
   .home {
