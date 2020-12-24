@@ -60,13 +60,16 @@ block body
             a.home__section__overview__button(href="#home__section__" + item.link)
               !=item.text
               i(data-feather="arrow-down-circle")
-          label.home__section__overview__button コンシェルジュ
-        a.home__section__link(href="javascript:void(0);" target="_blank" rel="nofollow")
-          img(src=metas.image + "images/banner01.jpg" alt="イベント完全ガイド")
+          input#modal-check(type="checkbox")
+          label.home__section__overview__label(for="modal-check") コンシェルジュ
+          #modal
+            p 宮城県の市町村のこと、仕事のこと、イベントのことやシステムのことなど、チャットで相談！
         p.home__section__supplement
           | キーマン対談やしごとドラフトなど、宮城県への移住に役立つ各種コンテンツをご用意。
           br
           | 宮城県内全35市町村と宮城県内企業が暮らしや仕事のことなどご案内します。どこの話を聞いたらいいかわからない方は、むすび丸チャットにお気軽にご相談ください。コンシェルジュがご案内します。
+        a.home__section__link(href="javascript:void(0);" target="_blank" rel="nofollow")
+          img(src=metas.image + "images/banner01.jpg" alt="イベント完全ガイド")
     #home__section__present.home__scroll
       section.home__section.home__section__present
         h2
