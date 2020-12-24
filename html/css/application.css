@@ -1147,6 +1147,11 @@ img {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+.home__section__supplement__thin {
+  max-width: 400px;
+  font-size: 14px;
+  margin: 0px auto;
+}
 .home__section__table {
   border-collapse: collapse;
   border-spacing: 0;
