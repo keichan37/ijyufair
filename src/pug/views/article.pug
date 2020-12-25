@@ -33,13 +33,12 @@ block body
         span!=subtitle3
       p.last-child
         !=body3
-        br
-        a(href=link) #{municipality}詳細情報をみる！
+        a.article__button__blue(href=link target="_blank" rel="nofollow") #{municipality}詳細情報をみる！
       a.article__button(href=entry target="_blank" rel="nofollow") しごとドラフトに参加する
       unless category=="042137"
         h2
           span 地域おこし協力隊とは
-        p.last-child
+        p.first-child.last-child
           | 地域がかかえている課題解決をミッションとして地方に移住し、ミッションクリアのために地域ブランドや観光資源を活用した商品開発や情報発信、交流イベントの企画・運営などの活動を行います。
           br
           | ・活動期間は１年以上３年未満です。

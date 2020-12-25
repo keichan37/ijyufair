@@ -61,8 +61,10 @@
       line-height: 1.5;
       padding-top: 0;
       padding-bottom: 50px;
-      > a {
-        color: @pink;
+      &.first-child {
+        > a {
+          color: @pink;
+        }
       }
       &.last-child {
         margin-bottom: 30px;
@@ -118,6 +120,12 @@
     font-size: 22px;
     padding-bottom: 4px;
     margin-bottom: 30px;
+    &__blue {
+      .button(@blue, @yellow);
+      font-size: 22px;
+      padding-bottom: 4px;
+      margin-bottom: 0;
+    }
   }
   &__link {
     text-align: center;
