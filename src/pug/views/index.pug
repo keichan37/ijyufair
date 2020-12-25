@@ -60,9 +60,9 @@ block body
             a.home__section__overview__button(href="#home__section__" + item.link)
               !=item.text
               i(data-feather="arrow-down-circle")
-          input.modal--check#modal--check(type="checkbox")
-          label.home__section__overview__label(for="modal--check") コンシェルジュ
-          label(for="modal--check").overlay
+          input.modal__check#modal__check(type="checkbox")
+          label.home__section__overview__label(for="modal__check") コンシェルジュ
+          label(for="modal__check").overlay
           .modal
             img(src=metas.image + "images/chat.png")
             p

@@ -50,28 +50,71 @@ block body
             | 「地域おこし協力隊」制度概要について
       table.article__table
         tbody
-          tr
-            th(colspan="2") 案件名
-            td!=td1
-          tr
-            th(colspan="2") 勤務地
-            td!=td2
-          tr
-            th(rowspan="3") 求人概要
-            th 募集職種
-            td!=td3
-          tr
-            th 業務内容
-            td!=td4
-          tr
-            th 募集要件
-            td!=td5
-          tr
-            th(colspan="2") 条件
-            td!=td6
-          tr
-            th(colspan="2") その他
-            td!=td7
+          if category=="042137"
+            tr
+              th(colspan="2") 会社名
+              td!=td1
+            tr
+              th(colspan="2") 勤務地
+              td!=td2
+            tr
+              th(colspan="2") 事業内容
+              td!=td3
+            tr
+              th(rowspan="4") 求人概要
+              th 募集職種
+              td!=td4
+            tr
+              th 業務内容
+              td!=td5
+            tr
+              th 求める能力
+              td!=td6
+            tr
+              th 勤務日・勤務時間
+              td 月～土（月22.0日、雨天等で作業ができない日は、休みとなります。）　勤務時間8:00～17:00
+            tr
+              th(rowspan="5")  企業情報
+              th 本社所在地
+              td 栗駒高原森林組合
+            tr
+              th 関連業界
+              td 木材関連産業
+            tr
+              th 社員数
+              td 68名
+            tr
+              th 設立年月
+              td 2002/03/01
+            tr
+              th 創業者
+              td 
+            tr
+              th(colspan="2") 募集の特徴
+              td!=td7
+          else
+            tr
+              th(colspan="2") 案件名
+              td!=td1
+            tr
+              th(colspan="2") 勤務地
+              td!=td2
+            tr
+              th(rowspan="3") 求人概要
+              th 募集職種
+              td!=td3
+            tr
+              th 業務内容
+              td!=td4
+            tr
+              th 募集要件
+              td!=td5
+            tr
+              th(colspan="2") 条件
+              td!=td6
+            tr
+              th(colspan="2") その他
+              td!=td7
       .article__link
         a(href="/draft/" + nextlink + ".html")
           | 次の求人を見る

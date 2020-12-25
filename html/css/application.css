@@ -1725,7 +1725,7 @@ img {
 }
 .job__list > li > a > img {
   width: 100%;
-  max-height: 150px;
+  max-height: 160px;
   margin-bottom: 3px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -1941,13 +1941,13 @@ img {
   width: 100%;
   height: 100%;
 }
-.modal--check {
+.modal__check {
   display: none;
 }
-#modal--check:checked ~ .modal {
+#modal__check:checked ~ .modal {
   visibility: visible;
 }
-#modal--check:checked ~ .overlay {
+#modal__check:checked ~ .overlay {
   opacity: 1;
   pointer-events: all;
 }
