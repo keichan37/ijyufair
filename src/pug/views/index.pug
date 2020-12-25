@@ -86,7 +86,9 @@ block body
         a.home__section__link(href="http://52.197.25.167" target="_blank" rel="nofollow")
           img(src=metas.image + "images/banner02.jpg" alt="先着50名限定 事前予約で「宮城まるごと味わいセット」 プレゼント")
         p.home__section__supplement
-          | 「個別相談ブース」に事前予約いただいた先着50名様に、
+          | 「
+          a(href="http://52.197.25.167" target="_blank" rel="nofollow") 個別相談ブース
+          | 」に事前予約いただいた先着50名様に、
           br
           | 自宅にいながら宮城を味わうことができる「宮城まるごと味わいセット」をプレゼントします。
           br
@@ -127,6 +129,12 @@ block body
             | 震災から10年。これまでと未来について、想いを語る1時間。
             br
             | この10年間の取り組みや出来事、出会い、そして、これからの未来について、お二人にざっくばらんにお話いただきます。
+          .home__section__stage__body__theme
+            h4 トークテーマ
+            ul
+              li 2011年3月のあの日から2021年を迎えて
+              li 震災後のこれまでの取り組みや想い
+              li これからの宮城の可能性と宮城の未来予想
           -
               var speakerlist1 = [
                 {
@@ -169,9 +177,9 @@ block body
           .home__section__stage__body__theme
             h4 トークテーマ
             ul
-              li 宮城だからできること・宮城のビジネスチャンス
-              li 企業として取り組んでいること・今後の展開
-              li 宮城のこれからの可能性・目指す未来
+              li 宮城だからできること／宮城のビジネスチャンス
+              li 企業として取り組んでいること／今後の展開
+              li 宮城のこれからの可能性／目指す未来
           -
               var speakerlist2 = [
                 {
@@ -182,7 +190,7 @@ block body
                 {
                   num: 3,
                   speaker: '株式会社ウジエスーパー 常務取締役 氏家良太郎',
-                  introduction: '1983年登米市生まれ。高校まで地元で育ち、その後、一念発起しイギリスに語学留学。英カレッジを卒業後、通信系の営業会社へ就職し5年間勤務。東日本大震災を機に、スーパーマーケットの仕事を固定観念でとらえるのではなく、生活者の近くに市場（イチバ）があることの価値を痛感。父である同社代表に頭を下げ、現職へ。スーパーマーケットの販売など様々な部署での経験を積む。ローカルスーパーは「D X（デジタル・トランスフォーメーション）」、「C X（カスタマー・エクスペリエンス）」の可能性の宝庫であると考え、新規事業展開に向けて取り組んでいる。',
+                  introduction: '1983年登米市生まれ。高校まで地元で育ち、その後、一念発起しイギリスに語学留学。英カレッジを卒業後、通信系の営業会社へ就職し5年間勤務。東日本大震災を機に、スーパーマーケットの仕事を固定観念でとらえるのではなく、生活者の近くに市場（イチバ）があることの価値を痛感。父である同社代表に頭を下げ、現職へ。スーパーマーケットの販売など様々な部署での経験を積む。ローカルスーパーは「D X（デジタル・トランスフォーメーション）」、「C X（カスタマー・エクスペリエンス）」の可能性の宝庫であると考え、既存間接業務効率アップに向けて取り組んでいる。',
                 },
                 {
                   num: 4,
@@ -220,7 +228,7 @@ block body
           span 気になる仕事を探してエントリー
         include ../include/_joblist
 
-        a.home__section__button(href="/draft/") しごとドラフト
+        a.home__section__button(href="/draft/") しごとドラフトはこちら
     #home__section__symposium.home__scroll
       section.home__section.home__section__symposium
         h2
@@ -259,17 +267,17 @@ block body
             img(src=metas.image + "images/banner03.jpg" alt="しごと編")
           a(href="https://zfrmz.com/4OrzAXawVbLh1VAkSo45" target="_blank" rel="nofollow")
             img(src=metas.image + "images/banner04.jpg" alt="暮らし編")
-        a.home__section__button(href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow") MiyagiMeeting
+        a.home__section__button(href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow") MiyagiMeetingはこちら
 
     #home__section__consultation.home__scroll.last-child
       section.home__section.home__section__consultation
         h2
           span 個別相談ブース
-        p.home__section__description
+        p.home__section__description.last-child
           | 気になる市町村や仕事があれば、各市町村や企業に直接話が聞ける市町村ブースを訪問してみてください。
           br
           | いずれも参加人数が限られますので事前予約がおすすめです。
-        ul.entry__flow
+        ul.entry__flow.entry__flow__blue
           li
             include ../../svg/pictogram04.svg
             h3 まずは気になる市町村を探す
@@ -323,5 +331,5 @@ block body
                 th 企業
                 td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
                 td 〇〇株式会社 / 〇〇株式会社 / 〇〇株式会社
-        a.home__section__button(href="http://52.197.25.167" target="_blank" rel="nofollow") 個別相談ブース
+        a.home__section__button(href="http://52.197.25.167" target="_blank" rel="nofollow") 個別相談ブースはこちら
     include ../include/_footer
