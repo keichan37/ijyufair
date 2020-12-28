@@ -1489,6 +1489,9 @@ img {
 .home__section__consultation > .home__section__description {
   max-width: 500px;
 }
+.home__section__consultation > .home__section__supplement__thin {
+  max-width: 480px;
+}
 @media (max-width: 767px) {
   .home {
     background-position: top 90px center;
