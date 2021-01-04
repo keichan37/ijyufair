@@ -2114,6 +2114,10 @@ img {
   padding-top: 0;
   padding-bottom: 50px;
 }
+.article__body > p > span.center {
+  display: block;
+  text-align: center;
+}
 .article__body > p.first-child > a {
   color: #e4005a;
 }
@@ -2243,7 +2247,7 @@ img {
   cursor: pointer;
   font-size: 22px;
   padding-bottom: 4px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   margin-top: 20px;
 }
 .article__button__blue:hover {
