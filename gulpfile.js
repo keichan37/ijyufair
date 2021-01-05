@@ -32,6 +32,7 @@ const build = (callback) => {
             body2: data[catKey]["body2"],
             subtitle3: data[catKey]["subtitle3"],
             body3: data[catKey]["body3"],
+            link: data[catKey]["link"],
             td1: data[catKey]["td1"],
             td2: data[catKey]["td2"],
             td3: data[catKey]["td3"],
