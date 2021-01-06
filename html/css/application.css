@@ -924,7 +924,7 @@ img {
 @media (max-width: 767px) {
   .footer {
     padding-bottom: 20px;
-    background-size: auto 20px;
+    background-size: 300% auto;
   }
   .footer__nav {
     -webkit-flex-direction: column;
