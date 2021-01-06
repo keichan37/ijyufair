@@ -33,8 +33,9 @@ block body
         span!=subtitle3
       p.last-child
         !=body3
-        a.article__button__blue(href=link target="_blank" rel="nofollow") #{municipality}詳細情報をみる！
-        span 求人情報を見て、市町村にも興味がわいたら、個別相談ブースでもじっくり話を聞いてみよう！
+        span.article__box
+          a.article__button__blue(href=link target="_blank" rel="nofollow") #{municipality}詳細情報をみる！
+          span 求人情報を見て、市町村にも興味がわいたら、個別相談ブースでもじっくり話を聞いてみよう！
       a.article__button(href=entry target="_blank" rel="nofollow") しごとドラフトに参加する
       unless category=="042137"
         h2

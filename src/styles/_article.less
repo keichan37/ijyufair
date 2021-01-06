@@ -61,9 +61,6 @@
       line-height: 1.5;
       padding-top: 0;
       padding-bottom: 50px;
-      > span {
-        display: block;
-      }
       &.first-child {
         > a {
           color: @pink;
@@ -117,6 +114,16 @@
         }
       }
     }
+  }
+  &__box {
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 1px solid @blue;
+    color: @blue;
+    .border-box;
+    padding: 0 20px 20px 20px;
+    max-width: 400px;
   }
   &__button {
     .button(@pink, @white);

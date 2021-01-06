@@ -2115,9 +2115,6 @@ img {
   padding-top: 0;
   padding-bottom: 50px;
 }
-.article__body > p > span {
-  display: block;
-}
 .article__body > p.first-child > a {
   color: #e4005a;
 }
@@ -2166,6 +2163,20 @@ img {
 .article__table tbody tr:last-child th,
 .article__table tbody tr:last-child td {
   border-bottom: none;
+}
+.article__box {
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 1px solid #1d2088;
+  color: #1d2088;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 20px 20px 20px;
+  max-width: 400px;
 }
 .article__button {
   font-size: 28px;
