@@ -1173,6 +1173,7 @@ img {
 .home__section__table tbody tr th,
 .home__section__table thead tr td,
 .home__section__table tbody tr td {
+  vertical-align: top;
   border: 1px dashed #1d2088;
   padding: 10px 15px 12px 15px;
 }
@@ -2114,9 +2115,8 @@ img {
   padding-top: 0;
   padding-bottom: 50px;
 }
-.article__body > p > span.center {
+.article__body > p > span {
   display: block;
-  text-align: center;
 }
 .article__body > p.first-child > a {
   color: #e4005a;
