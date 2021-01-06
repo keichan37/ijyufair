@@ -2169,6 +2169,11 @@ img {
   margin: 0px auto;
   margin-top: 20px;
   border: 1px solid #1d2088;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
   color: #1d2088;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
