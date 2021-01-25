@@ -15,29 +15,25 @@ document.querySelector('label[for]>a').addEventListener('click', function(event)
 
 // 日時指定で内容変更
 var now = new Date();
-//var start1 = new Date('2021/2/13 13:00:00');
-//var end1 = new Date('2021/2/13 14:00:00');
-//var start2 = new Date('2021/2/14 13:00:00');
-//var end2 = new Date('2021/2/14 13:45:00');
-var start1 = new Date('2021/1/25 15:15:00');
-var end1 = new Date('2021/1/25 15:20:00');
-var start2 = new Date('2021/1/25 15:25:00');
-var end2 = new Date('2021/1/25 15:30:00');
+var start1 = new Date('2021/2/13 13:00:00');
+var end1 = new Date('2021/2/13 14:00:00');
+var start2 = new Date('2021/2/14 13:00:00');
+var end2 = new Date('2021/2/14 13:45:00');
 var day1 = document.getElementById('home__section__day1')
 var day2 = document.getElementById('home__section__day2')
 if ( start1 < now && now < end1 ) {
   day1.textContent="YouTube配信中!";
-  day1.href = "https://www.youtube.com/watch?v=m7Bc3pLyij0"
+  day1.href = "https://www.youtube.com/"
 } else if ( end1 < now ) {
   day1.textContent="アーカイブ配信";
-  day1.href = "https://www.youtube.com/watch?v=m7Bc3pLyij0"
+  day1.href = "https://www.youtube.com/"
 }
 if ( start2 < now && now < end2 ) {
   day2.textContent="YouTube配信中!";
-  day2.href = "https://www.youtube.com/watch?v=ALZHF5UqnU4"
+  day2.href = "https://www.youtube.com/"
 } else if ( end2 < now ) {
   day2.textContent="アーカイブ配信";
-  day2.href = "https://www.youtube.com/watch?v=ALZHF5UqnU4"
+  day2.href = "https://www.youtube.com/"
 }
 
 // ページ内リンクをアニメーションさせる
