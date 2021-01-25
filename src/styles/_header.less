@@ -31,25 +31,27 @@
     padding: 0;
     > li {
       padding-left: 30px;
-      > a {
-        text-decoration: none;
-        font-size: 18px;
-        font-family: @sans-serif-b;
-        &:hover {
-          color: @blue;
-        }
-        > svg {
-          width: 11px;
-          height: 11px;
-          margin-left: 3px;
-          position: relative;
-          top: 0px;
-        }
-      }
-      &.current {
+      > label {
         > a {
-          cursor: default;
-          color: @blue;
+          text-decoration: none;
+          font-size: 18px;
+          font-family: @sans-serif-b;
+          &:hover {
+            color: @blue;
+          }
+          > svg {
+            width: 11px;
+            height: 11px;
+            margin-left: 3px;
+            position: relative;
+            top: 0px;
+          }
+        }
+        &.current {
+          > a {
+            cursor: default;
+            color: @blue;
+          }
         }
       }
     }
@@ -90,10 +92,13 @@
       padding-top: 80px;
       > li {
         padding-left: 0;
-        > a {
+        > label {
           display: block;
-          text-align: left;
-          padding: 15px 0;
+          > a {
+            display: block;
+            text-align: left;
+            padding: 15px 0;
+          }
         }
       }
     }

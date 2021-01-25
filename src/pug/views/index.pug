@@ -64,6 +64,9 @@ block body
           input.modal__check#modal__check(type="checkbox")
           label.home__section__overview__label(for="modal__check") コンシェルジュ
           label(for="modal__check").overlay
+          a.home__section__overview__button.home__section__overview__button__blue(href="javascript:void(0);")
+            | まるごと相談ブース
+            i(data-feather="arrow-down-circle")
           .modal
             h3
               span チャット機能のご紹介
@@ -159,7 +162,7 @@ block body
               figcaption
                 span!=item.speaker
                 !=item.introduction
-          a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY1に予約
+          a.home__section__button#home__section__day1(href=form target="_blank" rel="nofollow") ステージイベントDAY1に予約
         .home__section__stage__body
           time.home__section__time(datetime="2021-02-14 13:00:00.000-13:45") 
             b
@@ -209,7 +212,7 @@ block body
               figcaption
                 span!=item.speaker
                 !=item.introduction
-          a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY2に予約
+          a.home__section__button#home__section__day2(href=form target="_blank" rel="nofollow") ステージイベントDAY2に予約
     #home__section__draft.home__scroll
       section.home__section.home__section__draft
         h2

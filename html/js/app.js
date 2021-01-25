@@ -1,16 +1,42 @@
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+// SPブラウザのメニュー分高さを引いたheight
 let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-var trigger = document.getElementById('drawer__icon');
-if(trigger){
-  trigger.addEventListener('click', function(){
-    var target = document.getElementById('body');
-    target.classList.toggle('overflow');
-  }, false);
+// ハンバーガーメニューが押されたらスクロールさせない
+document.getElementById('drawer__check').addEventListener('click',function(){
+  var target = document.getElementById('body');
+  target.classList.toggle('overflow');
+}, false);
+
+// aタグの親labelのforを有効に
+document.querySelector('label[for]>a').addEventListener('click', function(event) {
+  document.getElementById(event.currentTarget.parentNode.htmlFor).click();
+}, false);
+
+// 日時指定で内容変更
+var now = new Date();
+var start1 = new Date('2021/2/13 13:00:00');
+var end1 = new Date('2021/2/13 14:00:00');
+var start2 = new Date('2021/2/14 13:00:00');
+var end2 = new Date('2021/2/14 13:45:00');
+var day1 = document.getElementById('home__section__day1')
+var day2 = document.getElementById('home__section__day2')
+if ( start1 < now && now < end1 ) {
+  day1.textContent="YouTube配信中!";
+  day1.href = "https://www.youtube.com/watch?v=m7Bc3pLyij0"
+} else if ( end1 < now ) {
+  day1.textContent="アーカイブ配信";
+  day1.href = "https://www.youtube.com/watch?v=m7Bc3pLyij0"
+}
+if ( start2 < now && now < end2 ) {
+  day2.textContent="YouTube配信中!";
+  day2.href = "https://www.youtube.com/watch?v=ALZHF5UqnU4"
+} else if ( end2 < now ) {
+  day2.textContent="アーカイブ配信";
+  day2.href = "https://www.youtube.com/watch?v=ALZHF5UqnU4"
 }
 
+// ページ内リンクをアニメーションさせる
 var scrollElm = (function() {
   if('scrollingElement' in document) return document.scrollingElement;
   if(navigator.userAgent.indexOf('WebKit') != -1) return document.body;

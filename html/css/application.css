@@ -381,9 +381,11 @@ body {
   background-position: center center;
   background-attachment: fixed;
 }
-html.overflow,
-body.overflow {
-  overflow: hidden;
+@media (max-width: 952px) {
+  html.overflow,
+  body.overflow {
+    overflow: hidden;
+  }
 }
 a {
   color: #000000;
@@ -719,22 +721,22 @@ img {
 .header__nav > li {
   padding-left: 30px;
 }
-.header__nav > li > a {
+.header__nav > li > label > a {
   text-decoration: none;
   font-size: 18px;
   font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B', sans-serif;
 }
-.header__nav > li > a:hover {
+.header__nav > li > label > a:hover {
   color: #1d2088;
 }
-.header__nav > li > a > svg {
+.header__nav > li > label > a > svg {
   width: 11px;
   height: 11px;
   margin-left: 3px;
   position: relative;
   top: 0px;
 }
-.header__nav > li.current > a {
+.header__nav > li > label.current > a {
   cursor: default;
   color: #1d2088;
 }
@@ -776,7 +778,10 @@ img {
   .header__nav > li {
     padding-left: 0;
   }
-  .header__nav > li > a {
+  .header__nav > li > label {
+    display: block;
+  }
+  .header__nav > li > label > a {
     display: block;
     text-align: left;
     padding: 15px 0;
@@ -1297,6 +1302,51 @@ img {
   right: 0;
   margin: -12px 15px 0 0;
 }
+.home__section__overview__button__blue {
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1d2088;
+  color: #ffffff;
+  max-width: 300px;
+  height: 60px;
+  margin: 0px auto;
+  margin-bottom: 25px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  -ms-border-radius: 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  padding-bottom: 3px;
+  margin-bottom: 17px;
+}
+.home__section__overview__button__blue:hover {
+  background-color: #1f2290;
+  -webkit-box-shadow: 0 0 5px #1d2088;
+  -moz-box-shadow: 0 0 5px #1d2088;
+  -ms-box-shadow: 0 0 5px #1d2088;
+  -o-box-shadow: 0 0 5px #1d2088;
+  box-shadow: 0 0 5px #1d2088;
+}
 .home__section__overview__label {
   font-size: 28px;
   text-align: center;
@@ -1330,6 +1380,7 @@ img {
   transition: 0.3s;
   padding-bottom: 5px;
   cursor: pointer;
+  margin-bottom: 17px;
   font-size: 24px;
   width: 280px;
 }

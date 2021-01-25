@@ -18,8 +18,10 @@ body {
   background-size: 100% calc(var(--vh, 1vh) * 100);
   background-position: center center;
   background-attachment: fixed;
-  &.overflow {
-    overflow: hidden;
+  @media (max-width: 952px) {
+    &.overflow {
+      overflow: hidden;
+    }
   }
 }
 
