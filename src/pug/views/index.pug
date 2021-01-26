@@ -64,9 +64,6 @@ block body
           input.modal__check#modal__check(type="checkbox")
           label.home__section__overview__label(for="modal__check") コンシェルジュ
           label(for="modal__check").overlay
-          a.home__section__overview__button.home__section__overview__button__blue(href="javascript:void(0);")
-            | まるごと相談ブース
-            i(data-feather="arrow-down-circle")
           .modal
             h3
               span チャット機能のご紹介
@@ -83,6 +80,8 @@ block body
           | キーマン対談やしごとドラフトなど、宮城県への移住に役立つ各種コンテンツをご用意。
           br
           | 宮城県内全35市町村・企業と宮城県内企業が暮らしや仕事のことなどご案内します。どこの話を聞いたらいいかわからない方は、むすび丸チャットにお気軽にご相談ください。コンシェルジュがご案内します。
+        a.home__section__link.home__section__link__blue(href="javascript:void(0);" target="_blank" rel="nofollow")
+          img(src=metas.image + "images/banner05.jpg" alt="宮城まるごと相談予約受付中")
         a.home__section__link(href="/files/about_event.pdf" target="_blank" rel="nofollow")
           img(src=metas.image + "images/banner01.jpg" alt="イベント完全ガイド")
     #home__section__present.home__scroll

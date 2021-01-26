@@ -1104,6 +1104,12 @@ img {
   -moz-opacity: 0.8;
   -ms-filter: "alpha(opacity=@ratioms)";
 }
+.home__section__link__blue > img {
+  border: 5px solid #1d2088;
+}
+.home__section__link__blue:hover > img {
+  border-color: rgba(29, 32, 136, 0.7);
+}
 .home__section__time {
   display: -webkit-flex;
   display: flex;

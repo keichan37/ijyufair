@@ -85,6 +85,16 @@
           .opacity;
         }
       }
+      &__blue {
+        > img {
+          border: 5px solid @blue;
+        }
+        &:hover {
+          > img {
+            border-color: fade(@blue,70%);
+          }
+        }
+      }
     }
     &__time {
       .flex;
