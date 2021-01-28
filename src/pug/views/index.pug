@@ -80,6 +80,8 @@ block body
           | キーマン対談やしごとドラフトなど、宮城県への移住に役立つ各種コンテンツをご用意。
           br
           | 宮城県内全35市町村・企業と宮城県内企業が暮らしや仕事のことなどご案内します。どこの話を聞いたらいいかわからない方は、むすび丸チャットにお気軽にご相談ください。コンシェルジュがご案内します。
+        a.home__section__link.home__section__link__blue(href="https://timerex.net/s/soudansbr/9889002b/" target="_blank" rel="nofollow")
+          img(src=metas.image + "images/banner05.jpg" alt="宮城まるごと相談予約受付中")
         a.home__section__link(href="/files/about_event.pdf" target="_blank" rel="nofollow")
           img(src=metas.image + "images/banner01.jpg" alt="イベント完全ガイド")
     #home__section__present.home__scroll
@@ -159,7 +161,7 @@ block body
               figcaption
                 span!=item.speaker
                 !=item.introduction
-          a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY1に予約
+          a.home__section__button#home__section__day1(href=form target="_blank" rel="nofollow") ステージイベントDAY1に予約
         .home__section__stage__body
           time.home__section__time(datetime="2021-02-14 13:00:00.000-13:45") 
             b
@@ -209,7 +211,7 @@ block body
               figcaption
                 span!=item.speaker
                 !=item.introduction
-          a.home__section__button(href=form target="_blank" rel="nofollow") ステージイベントDAY2に予約
+          a.home__section__button#home__section__day2(href=form target="_blank" rel="nofollow") ステージイベントDAY2に予約
     #home__section__draft.home__scroll
       section.home__section.home__section__draft
         h2
