@@ -946,6 +946,10 @@ img {
   background-position: top 50px center;
   padding-top: 80px;
 }
+.home strong.red {
+  color: #e4005a;
+  font-size: 24px;
+}
 .home__cover {
   padding-bottom: 100px;
   position: relative;
@@ -1537,6 +1541,7 @@ img {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
+  cursor: default;
 }
 .home__section__symposium__banners > a > img {
   border-radius: 5px;
@@ -1554,14 +1559,6 @@ img {
 }
 .home__section__symposium__banners > a:last-child {
   margin-left: 10px;
-}
-.home__section__symposium__banners > a:hover {
-  border-color: rgba(228, 0, 90, 0.7);
-}
-.home__section__symposium__banners > a:hover > img {
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  -ms-filter: "alpha(opacity=@ratioms)";
 }
 .home__section__symposium__schedule {
   display: -webkit-flex;
