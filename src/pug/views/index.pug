@@ -99,7 +99,8 @@ block body
           br
           | イベント当日は、宮城の味を楽しみながら、是非ご参加ください！
           br
-          | ※先着順のため、定員に達し次第終了します
+          //-| ※先着順のため、定員に達し次第終了します
+          strong.red 定員に達しましたので、受付を終了しました。
         .home__section__registration
           include ../../svg/pictogram07.svg
           p
@@ -244,6 +245,8 @@ block body
             br
             | 宮城にはまり隊!
         p.home__section__description
+          strong.red 満員御礼! 定員に達したためエントリーを締め切りました。
+          br
           | 地域と自分らしく関わりたい！そんな「あなたと地域の座談会」です。
           br
           | 海と山、両方あるのが宮城の魅力！ということで、さまざまな地域の人たちと、気軽に“おしゃべり”してみませんか？
@@ -270,9 +273,9 @@ block body
               | 日(日) 
           strong 両日: 14:00~15:00
         .home__section__symposium__banners
-          a(href=form2 target="_blank" rel="nofollow")
+          a(href="javascript:void(0);" target="_blank" rel="nofollow")
             img(src=metas.image + "images/banner03.jpg" alt="しごと編")
-          a(href=form2 target="_blank" rel="nofollow")
+          a(href="javascript:void(0);" target="_blank" rel="nofollow")
             img(src=metas.image + "images/banner04.jpg" alt="暮らし編")
         a.home__section__button(href="https://lp.sibire.co.jp/meeting" target="_blank" rel="nofollow") MiyagiMeetingはこちら
 
