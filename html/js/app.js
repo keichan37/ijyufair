@@ -15,10 +15,8 @@ document.querySelector('label[for]>a').addEventListener('click', function(event)
 
 // 日時指定で内容変更
 var now = new Date();
-//var end1 = new Date('2021/2/13 14:00:00');
-//var end2 = new Date('2021/2/14 13:45:00');
-var end1 = new Date('2021/2/11 18:00:00');
-var end2 = new Date('2021/2/11 18:01:00');
+var end1 = new Date('2021/2/13 14:00:00');
+var end2 = new Date('2021/2/14 13:45:00');
 var day1 = document.getElementById('home__section__day1')
 var day2 = document.getElementById('home__section__day2')
 if ( end1 < now ) {
