@@ -992,7 +992,8 @@ img {
   font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B', sans-serif;
 }
 .home__scroll {
-  padding-top: 80px;
+  padding-top: 111px;
+  margin-top: -31px;
 }
 .home__scroll.last-child {
   margin-bottom: 80px;
