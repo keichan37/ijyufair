@@ -14,19 +14,19 @@ document.querySelector('label[for]>a').addEventListener('click', function(event)
 }, false);
 
 // 日時指定で内容変更
-var now = new Date();
-var end1 = new Date('2021/2/13 14:00:00');
-var end2 = new Date('2021/2/14 13:45:00');
-var day1 = document.getElementById('home__section__day1')
-var day2 = document.getElementById('home__section__day2')
-if ( end1 < now ) {
-  day1.textContent="アーカイブ視聴";
-  day1.href = "https://youtu.be/unWU_6uNffs"
-}
-if ( end2 < now ) {
-  day2.textContent="アーカイブ視聴";
-  day2.href = "https://youtu.be/KvLHv7ptpKI"
-}
+//var now = new Date();
+//var end1 = new Date('2021/2/13 14:00:00');
+//var end2 = new Date('2021/2/14 13:45:00');
+//var day1 = document.getElementById('home__section__day1')
+//var day2 = document.getElementById('home__section__day2')
+//if ( end1 < now ) {
+//  day1.textContent="アーカイブ視聴";
+//  day1.href = "https://youtu.be/unWU_6uNffs"
+//}
+//if ( end2 < now ) {
+//  day2.textContent="アーカイブ視聴";
+//  day2.href = "https://youtu.be/KvLHv7ptpKI"
+//}
 
 // ページ内リンクをアニメーションさせる
 var scrollElm = (function() {
