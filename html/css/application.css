@@ -676,7 +676,7 @@ img {
   fill: #44691a;
 }
 .header {
-  height: 80px;
+  height: 111px;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -740,6 +740,14 @@ img {
   cursor: default;
   color: #1d2088;
 }
+.header #message {
+  text-align: center;
+  background-color: rgba(228, 0, 90, 0.9);
+  color: #ffffff;
+  padding: 5px 0 8px 0;
+  position: relative;
+  z-index: 3;
+}
 .header .drawer__input {
   display: none;
 }
@@ -773,7 +781,7 @@ img {
   }
   .header__nav {
     display: block;
-    padding-top: 80px;
+    padding-top: 111px;
   }
   .header__nav > li {
     padding-left: 0;
@@ -943,8 +951,8 @@ img {
   background-image: url("../images/illust.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: top 50px center;
-  padding-top: 80px;
+  background-position: top 112px center;
+  padding-top: 111px;
 }
 .home strong.red {
   color: #e4005a;
@@ -1588,7 +1596,7 @@ img {
 }
 @media (max-width: 767px) {
   .home {
-    background-position: top 90px center;
+    background-position: top 110px center;
   }
   .home__cover {
     padding-bottom: 30px;
@@ -2072,7 +2080,7 @@ img {
   background-color: #ffffff;
 }
 .article {
-  padding-top: 80px;
+  padding-top: 111px;
 }
 .article__body {
   max-width: 1100px;

@@ -1,5 +1,5 @@
 .header {
-  height: 80px;
+  height: 111px;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -56,6 +56,14 @@
       }
     }
   }
+  #message {
+    text-align: center;
+    background-color: fade(@pink,90%);
+    color: @white;
+    padding: 5px 0 8px 0;
+    position: relative;
+    z-index: 3;
+  }
   .drawer {
     &__input {
       display: none;
@@ -89,7 +97,7 @@
     }
     &__nav {
       display: block;
-      padding-top: 80px;
+      padding-top: 111px;
       > li {
         padding-left: 0;
         > label {
