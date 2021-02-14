@@ -747,6 +747,14 @@ img {
   padding: 5px 0 8px 0;
   position: relative;
   z-index: 3;
+  font-family: 'FOT-筑紫A丸ゴシック Std B', 'TsukuARdGothicStd-B', sans-serif;
+}
+.header #message > svg {
+  height: 16px;
+  width: auto;
+  margin-right: 3px;
+  position: relative;
+  top: 3px;
 }
 .header .drawer__input {
   display: none;
